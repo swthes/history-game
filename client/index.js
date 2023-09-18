@@ -1,5 +1,6 @@
 let quizData = [];
 let currentQuestionIndex = 0;
+let quizTypeSelected = null;
 
 function startQuiz(quizType) {
     fetch('http://localhost:3000/home') // Fetching from local server
@@ -16,9 +17,15 @@ function startQuiz(quizType) {
                 quizData = data.tudorQuestions;
             }
 
+            quizTypeSelected = quizType;
+
+            // Save progress to local storage
+            localStorage.setItem('currentQuestionIndex', currentQuestionIndex);
+            localStorage.setItem('quizType', quizTypeSelected);
+
             // Hide the initial quiz selection buttons
             document.getElementById("start-buttons").style.display = "none";
-            
+
             // Show the first question
             displayQuestion(currentQuestionIndex);
         })
@@ -30,7 +37,7 @@ function startQuiz(quizType) {
 function displayQuestion(index) {
     let question = quizData[index];
     let optionsDiv = document.getElementById("options");
-    
+
     document.getElementById("question-text").innerText = question.question;
     optionsDiv.innerHTML = ""; // Clear previous options
 
@@ -43,10 +50,7 @@ function displayQuestion(index) {
                 if (currentQuestionIndex < quizData.length) {
                     displayQuestion(currentQuestionIndex);
                 } else {
-                    alert("Quiz finished!");
-                    document.getElementById("start-buttons").style.display = "block";
-                    document.getElementById("quiz-section").style.display = "none";
-                    currentQuestionIndex = 0;
+                    finishQuiz();
                 }
             } else {
                 alert("Wrong answer! Try again.");
@@ -58,5 +62,32 @@ function displayQuestion(index) {
     document.getElementById("quiz-section").style.display = "block";
 }
 
+function finishQuiz() {
+    alert("Quiz finished!");
+    clearProgress();
+    document.getElementById("start-buttons").style.display = "block";
+    document.getElementById("quiz-section").style.display = "none";
+    currentQuestionIndex = 0;
+}
+
+function clearProgress() {
+    localStorage.removeItem('currentQuestionIndex');
+    localStorage.removeItem('quizType');
+}
+
 document.getElementById('vikings-btn').addEventListener('click', () => startQuiz('vikings'));
 document.getElementById('tudors-btn').addEventListener('click', () => startQuiz('tudors'));
+
+document.getElementById('back-to-home').addEventListener('click', () => {
+    clearProgress();
+    document.getElementById("quiz-section").style.display = "none";
+    document.getElementById("start-buttons").style.display = "block";
+    currentQuestionIndex = 0;
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem('currentQuestionIndex') && localStorage.getItem('quizType')) {
+        currentQuestionIndex = parseInt(localStorage.getItem('currentQuestionIndex'), 10);
+        startQuiz(localStorage.getItem('quizType'));
+    }
+});

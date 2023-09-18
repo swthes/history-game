@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History Quiz</title>
     <link rel="stylesheet" href="index.css">
-    <script defer src="index.js"></script>
 </head>
-<body>
-    <h1>Welcome to the History Quiz</h1>
 
+<body>
+    <h1>THROUGH THE AGES</h1>
     <div id="start-buttons">
-        <button id="vikings-btn">Viking Quiz</button>
-        <button id="tudors-btn">Tudor Quiz</button>
+        <button id="vikings-btn">Vikings Quiz</button>
+        <button id="tudors-btn">Tudors Quiz</button>
     </div>
 
-    <section id="quiz-section" style="display:none;">
-        <h2 id="question-text"></h2>
-        <div id="options">
-            <!-- The options will be populated dynamically -->
-        </div>
-    </section>
+    <div id="quiz-section" style="display: none;">
+        <p id="question-text"></p>
+        <div id="options"></div>
+        <button id="back-to-home">Back to Home</button>
+    </div>
+    
 
-   
+    <script src="index.js"></script>
 </body>
+
 </html>
