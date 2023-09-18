@@ -1,0 +1,133 @@
+[
+    {
+      "id": 1,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Who was the first Tudor monarch?",
+      "options": [
+        "Henry VII",
+        "Henry VIII",
+        "Elizabeth I",
+        "Mary I"
+      ],
+      "correctAnswer": "Henry VII"
+    },
+    {
+      "id": 2,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Which of Henry VIII's wives was beheaded?",
+      "options": [
+        "Catherine of Aragon",
+        "Anne Boleyn",
+        "Jane Seymour",
+        "Catherine Parr"
+      ],
+      "correctAnswer": "Anne Boleyn"
+    },
+    {
+      "id": 3,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Which Tudor monarch reestablished Protestantism in England?",
+      "options": [
+        "Mary I",
+        "Edward VI",
+        "Elizabeth I",
+        "Henry VII"
+      ],
+      "correctAnswer": "Elizabeth I"
+    },
+    {
+      "id": 4,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "How many wives did Henry VIII have?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "6"
+    },
+    {
+      "id": 5,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Who was known as the 'Nine Day Queen'?",
+      "options": [
+        "Mary I",
+        "Anne of Cleves",
+        "Lady Jane Grey",
+        "Elizabeth I"
+      ],
+      "correctAnswer": "Lady Jane Grey"
+    },
+    {
+      "id": 6,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Under which Tudor monarch was the Church of England established?",
+      "options": [
+        "Henry VIII",
+        "Edward VI",
+        "Elizabeth I",
+        "Mary I"
+      ],
+      "correctAnswer": "Henry VIII"
+    },
+    {
+      "id": 7,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Which monarch was the child of Henry VIII and Anne Boleyn?",
+      "options": [
+        "Edward VI",
+        "Mary I",
+        "Elizabeth I",
+        "Lady Jane Grey"
+      ],
+      "correctAnswer": "Elizabeth I"
+    },
+    {
+      "id": 8,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Who succeeded Elizabeth I, marking the end of the Tudor dynasty?",
+      "options": [
+        "James I",
+        "Edward VI",
+        "Mary, Queen of Scots",
+        "Charles I"
+      ],
+      "correctAnswer": "James I"
+    },
+    {
+      "id": 9,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "Which of Henry VIII's wives outlived him?",
+      "options": [
+        "Anne Boleyn",
+        "Catherine Howard",
+        "Catherine of Aragon",
+        "Catherine Parr"
+      ],
+      "correctAnswer": "Catherine Parr"
+    },
+    {
+      "id": 10,
+      "type": "multipleChoice",
+      "category": "History - Tudors",
+      "question": "What major event took place during Mary I's reign leading to her nickname 'Bloody Mary'?",
+      "options": [
+        "The Golden Age",
+        "The establishment of the Church of England",
+        "The Marian Persecutions",
+        "The Armada Victory"
+      ],
+      "correctAnswer": "The Marian Persecutions"
+    }
+  ]
+  
