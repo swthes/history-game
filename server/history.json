@@ -131,5 +131,160 @@
           "answer": "A bard of northern lands"
       }
       
-  ]
+  ],
+
+  "tudorQuestions": [
+            {
+                "id": 1,
+                "type": "multipleChoice",
+                "category": "History-Tudors",
+                "question": "You are Henry VIII, how many wives did you have during your lifetime?",
+                "options": [
+                    "4",
+                    "7",
+                    "6",
+                    "8"
+                ],
+                "answer": "6"
+            },
+
+            {
+                "id": 2,
+                "type": "multipleChoice",
+                "category": "History-Tudors",
+                "question": "What is the correct order of your wives?",
+                "options": [
+                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Parr, Catherine Howard",
+                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr",
+                    "Catherine of Aragon, Anne of Cleves, Anne Boleyn, Jane Seymour, Catherine Parr, Catherine Howard",
+                    "Catherine Howard, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine of Aragon, Catherine Parr"
+                ],
+                "answer": "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr"
+            },
+            {
+                "id": 3,
+                "type": "multipleChoice",
+                "category": "History-Tudors",
+                "question": "You are married to Catherine of Aragon, and want to leave her, what do you do?",
+                "options": [
+                    "Have the Catholic Church allow you to divorce her",
+                    "Behead her",
+                    "Have the Protestant Church allow you to divorce her",
+                    "Create the Church of England to divorce her"
+                ],
+                "answer": "Create the Church of England to divorce her"
+            },
+
+            {
+                "id": 4,
+                "type": "multipleChoice",
+                "category": "History-Tudors",
+                "question": "You are married to Anne Bolyen and have found out she just cheated on you, what do you do?",
+                "options": [
+                    "You have her child",
+                    "Divorce her",
+                    "Behead her",
+                    "Exile her"
+                ],
+                "answer": "Behead her"
+            },
+            {
+                "id": 5,
+                "type": "multipleChoice",
+                "category": "History-Tudors",
+                "question": "You're married to Jane Seymor, she gives you what you've always wanted. What is this?",
+                "options": [
+                    "A jousting trophy",
+                    "2 sons",
+                    "A son",
+                    "A daughter and a son"
+                ],
+                "answer": "A son"
+            },
+
+            {
+            "id": 6,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "What is the correct order of your wives' cause of death?",
+            "options": [
+                "Divorced, beheaded survived, divorced, beheaded, died",
+                "Beheaded, divorced, died, beheaded, divorced, died",
+                "Beheaded, divorced, died, beheaded, divorced, survived",
+                "Divorced, beheaded, died, divorced, beheaded, survived"
+            ],
+            "answer": "Divorced, beheaded, died, divorced, beheaded, survived"
+            },
+
+        {
+            "id": 7,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "What happened when you first met Anne of Cleves?",
+            "options": [
+                "You fell in love",
+                "You found out she had an affair",
+                "She didn't recognise you ",
+                "You beheaded her"
+            ],
+            "answer": "She didn't recognise you "
+            },
+
+        {
+            "id": 8,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "Catherine Howard was related to one of your previous wives, who was she related to?",
+            "options": [
+                "Catherine of Aragon",
+                "Anne Boleyn",
+                "Catherine Parr",
+                "Anne of Cleves"
+            ],
+            "answer": "Anne Boleyn"
+            },
+
+        {
+            "id": 9,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "What happened when you married Catherine Parr?",
+            "options": [
+                "You died in a jousting competition in January 1547",
+                "You died from an infected wound in January 1547",
+                "She ran away",
+                "You died in January 1548"
+            ],
+            "answer": "You died from an infected wound in January 1547"
+            },
+
+        {
+            "id": 10,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "Who did you wish to be buried beside?",
+            "options": [
+                "Catherine of Aragon",
+                "Catherine Howard",
+                "Anne of Cleves",
+                "Jane Seymor"
+            ],
+            "answer": "Jane Seymor"
+            },
+
+        { 
+            "id": 10,
+            "type": "multipleChoice",
+            "category": "History-Tudors",
+            "question": "Who were your children?",
+            "options": [
+                "Edward VI, Mary I, Elizabeth I",
+                "Elizabeth I, Edward VI",
+                "Mary I, Edward VII, Elizabeth I",
+                "Mary I, Edward VII, Elizabeth I, Charles II"
+            ],
+            "answer": "Edward VI, Mary I, Elizabeth I"
+            }
+        ]
+
 }
