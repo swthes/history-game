@@ -15,7 +15,8 @@ app.get('/home',(req, res) => {
 })
 
 app.get('/home/tudors', (req, res) => {
-    const tudorsQuestions = questions.filter((item) => item.category == "History - Tudors")
+    // const tudorsQuestions = questions.filter((item) => item.category == "History - Tudors")
+    // const tudorsQuestions = questions.filter((item) => item.category == "History - Tudors")
     const tudorsOptions = tudorsQuestions.map(item => ({
         id:item.id,
         question: item.question,
@@ -24,6 +25,18 @@ app.get('/home/tudors', (req, res) => {
     }))
 
     res.send(tudorsOptions)    
+})
+
+app.get('/home/viking', (req, res) => {
+    const vikingQuestions = questions.VikingQuestions
+    // const vikingOptions = vikingQuestions.map(item => ({
+    //     id:item.id,
+    //     question: item.question,
+    //     options: item.options,
+    //     correctAnswer: item.correctAnswer 
+    // }))
+
+    res.send(vikingQuestions)    
 })
 
 app.get('/', (req, res) => {

@@ -1,133 +1,135 @@
-[
-    {
-      "id": 1,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Who was the first Tudor monarch?",
-      "options": [
-        "Henry VII",
-        "Henry VIII",
-        "Elizabeth I",
-        "Mary I"
-      ],
-      "correctAnswer": "Henry VII"
-    },
-    {
-      "id": 2,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Which of Henry VIII's wives was beheaded?",
-      "options": [
-        "Catherine of Aragon",
-        "Anne Boleyn",
-        "Jane Seymour",
-        "Catherine Parr"
-      ],
-      "correctAnswer": "Anne Boleyn"
-    },
-    {
-      "id": 3,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Which Tudor monarch reestablished Protestantism in England?",
-      "options": [
-        "Mary I",
-        "Edward VI",
-        "Elizabeth I",
-        "Henry VII"
-      ],
-      "correctAnswer": "Elizabeth I"
-    },
-    {
-      "id": 4,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "How many wives did Henry VIII have?",
-      "options": [
-        "3",
-        "5",
-        "6",
-        "8"
-      ],
-      "correctAnswer": "6"
-    },
-    {
-      "id": 5,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Who was known as the 'Nine Day Queen'?",
-      "options": [
-        "Mary I",
-        "Anne of Cleves",
-        "Lady Jane Grey",
-        "Elizabeth I"
-      ],
-      "correctAnswer": "Lady Jane Grey"
-    },
-    {
-      "id": 6,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Under which Tudor monarch was the Church of England established?",
-      "options": [
-        "Henry VIII",
-        "Edward VI",
-        "Elizabeth I",
-        "Mary I"
-      ],
-      "correctAnswer": "Henry VIII"
-    },
-    {
-      "id": 7,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Which monarch was the child of Henry VIII and Anne Boleyn?",
-      "options": [
-        "Edward VI",
-        "Mary I",
-        "Elizabeth I",
-        "Lady Jane Grey"
-      ],
-      "correctAnswer": "Elizabeth I"
-    },
-    {
-      "id": 8,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Who succeeded Elizabeth I, marking the end of the Tudor dynasty?",
-      "options": [
-        "James I",
-        "Edward VI",
-        "Mary, Queen of Scots",
-        "Charles I"
-      ],
-      "correctAnswer": "James I"
-    },
-    {
-      "id": 9,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "Which of Henry VIII's wives outlived him?",
-      "options": [
-        "Anne Boleyn",
-        "Catherine Howard",
-        "Catherine of Aragon",
-        "Catherine Parr"
-      ],
-      "correctAnswer": "Catherine Parr"
-    },
-    {
-      "id": 10,
-      "type": "multipleChoice",
-      "category": "History - Tudors",
-      "question": "What major event took place during Mary I's reign leading to her nickname 'Bloody Mary'?",
-      "options": [
-        "The Golden Age",
-        "The establishment of the Church of England",
-        "The Marian Persecutions",
-        "The Armada Victory"
-      ],
-      "correctAnswer": "The Marian Persecutions"
-    }
+{
+  "VikingQuestions": [
+      {
+          "id": 1,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Young Halfdan listened to tales of his famous father who was renowned for his valor and wit. Who was this legendary figure?",
+          "options": [
+              "King Æthelwulf of Wessex",
+              "Ivar the Boneless",
+              "Bjorn Ironside",
+              "Ragnar Lothbrok"
+          ],
+          "answer": "Ragnar Lothbrok"
+      },
+      {
+          "id": 2,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Fueled by vengeance for their father's death, Halfdan and his brothers assemble a formidable force. What is this army famously known as?",
+          "options": [
+              "Norse Sea Raiders",
+              "The Shieldwall Brigade",
+              "Viking Invaders",
+              "Great Heathen Army"
+          ],
+          "answer": "Great Heathen Army"
+      },
+      {
+          "id": 3,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Halfdan's journey took him to the heart of England, where he and one of his brothers laid siege to a major city. Which brother stood by his side?",
+          "options": [
+              "Sigurd Snake-in-the-Eye",
+              "Bjorn Ironside",
+              "Ivar the Boneless",
+              "Ubbe"
+          ],
+          "answer": "Ivar the Boneless"
+      },
+      {
+          "id": 4,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "After many conquests, Halfdan’s path led him to a significant seat of power. Which city did he rule?",
+          "options": [
+              "Northumbria",
+              "Wessex",
+              "Dublin",
+              "Mercia"
+          ],
+          "answer": "Dublin"
+      },
+      {
+          "id": 5,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "The Raven Banner: In battle, Halfdan and his brothers were often recognised by a particular standard, symbolising their lineage and might. What was it?",
+          "options": [
+              "The Serpent's Sigil",
+              "The Shield of Valhalla",
+              "The Wolf's Emblem",
+              "The Raven Banner"
+          ],
+          "answer": "The Raven Banner"
+      },
+      {
+          "id": 6,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Revenge Served Cold: Halfdan’s thirst for vengeance was rooted in the belief that a particular English King was responsible for his father’s death. Who was this King?",
+          "options": [
+              "King Alfred of Wessex",
+              "King Æthelwulf of Wessex",
+              "King Ecgberht of Wessex",
+              "King Aelle of Northumbria"
+          ],
+          "answer": "King Aelle of Northumbria"
+      },
+      {
+          "id": 7,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Halfdan’s journey was not without challenges. At one pivotal battle, he faced the combined forces of Wessex and Mercia. Which battle was it?",
+          "options": [
+              "Battle of Ashdown",
+              "Battle of Stamford Bridge",
+              "Battle of Maldon",
+              "Battle of Reading"
+          ],
+          "answer": "Battle of Ashdown"
+      },
+      {
+          "id": 8,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Throughout his life, Halfdan held many titles, but there’s one he never claimed. Which one?",
+          "options": [
+              "King of Northumbria",
+              "King of Dublin",
+              "King of York",
+              "King of Denmark"
+          ],
+          "answer": "King of Denmark"
+      },
+      {
+          "id": 9,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Halfdan’s life was full of battles and conquests, but his demise is shrouded in mystery. How do some tales suggest he met his end?",
+          "options":[
+              "Lost in a storm at sea",
+              "Killed in a duel honour",
+              "Assassinated in the alleys of Dublin",
+              "Slain by a mythical beast"
+          ],
+          "answer": "Lost in a storm at sea"
+      },
+      {
+          "id": 10,
+          "type": "multipleChoice",
+          "category": "History-Vikings",
+          "question": "Despite the passing of time, Halfdan’s legacy remains, echoed in tales and songs. What is he NOT remembered for? ",
+          "options": [
+              "A son seeking vengeance",
+              "A fearsome Viking Leader",
+              "A bard of northern lands",
+              "Ruler of Dublin"
+          ],
+          "answer": "A bard of northern lands"
+      }
+      
   ]
-  
+}
