@@ -5,6 +5,11 @@ body {
     padding: 20px;
 }
 
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
 #start-buttons,
 #quiz-section,
 #out-of-lives-modal {
