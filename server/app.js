@@ -35,16 +35,16 @@ app.get('/home',(req, res) => {
    
 })
 
-app.get('/questions/random', (req, res) => {
-    const randIdx = Math.floor(Math.random() * questions.length); ;
-    res.send(questios[randIdx]);})
+// app.get('/questions/random', (req, res) => {
+//     const randIdx = Math.floor(Math.random() * questions.length); ;
+//     res.send(questios[randIdx]);})
 
-app.get('/questions/:id', (req, res) => {
-    //const ids = req.params.id;
-    const ids = questions.map((question) => questions.id);
-    let maxId = Math.max(...ids);
-     res.send(question[ids]);
-})
+// app.get('/questions/:id', (req, res) => {
+//     //const ids = req.params.id;
+//     const ids = questions.map((question) => questions.id);
+//     let maxId = Math.max(...ids);
+//      res.send(question[ids]);
+// })
 
 
 module.exports = app;
