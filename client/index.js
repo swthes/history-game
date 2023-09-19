@@ -36,7 +36,7 @@
    const question =  await response.json()
    //loops throught the question and adds the values to a question type
     question.forEach(element => { 
-
+    // adds the lip
      let q = new Question(element.id,element.question,element.options,element.correctAnswer)
      questionsArr.push(q);
    
@@ -53,10 +53,13 @@
 getData("tudors")
 
 getData("tudors").then(() => {
-    
+
     console.log(questionsArr[0].checkAnswer("Henry VII"));
     console.log(questionsArr[0].getquestion());
     console.log(questionsArr[0].getOptions());
-     // Note: this will return -1 since you're trying to find an integer 1 in an array of objects. 
-  });
+    
+});
+
+
+
 
