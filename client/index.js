@@ -22,19 +22,7 @@ class Quiz {
     startQuiz(quizType) {
        
         
-         fetch('http://localhost:3000/home')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-        .then(data => {
-            if (quizType === 'vikings') {
-                this.quizData = data.VikingQuestions;
-            } else if (quizType === 'tudors') {
-                this.quizData = data.tudorQuestions;
-            }
+       
 
         this.quizTypeSelected = quizType;
 
@@ -55,10 +43,7 @@ class Quiz {
         } else {
             this.displayOutOfLivesModal();
         }
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error.message);
-        });
+        
 
         
       
@@ -79,7 +64,9 @@ class Quiz {
             let optionBtn = document.createElement("button");
             optionBtn.innerText = option;
             optionBtn.addEventListener("click", () => {
+                console.log(option);
                 if (option === question.answer) {
+                   
                     this.currentQuestionIndex++;
                     if (this.currentQuestionIndex < this.quizData.length) {
                         this.displayQuestion(this.currentQuestionIndex);
@@ -194,6 +181,24 @@ class Quiz {
             this.currentQuestionIndex = parseInt(localStorage.getItem('currentQuestionIndex'), 10);
             this.startQuiz(localStorage.getItem('quizType'));
         }
+    }
+    getData(type,Character){
+          fetch('http://localhost:3000/home')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+        .then(data => {
+            if (quizType === 'vikings') {
+                this.quizData = data.VikingQuestions;
+            } else if (quizType === 'tudors') {
+                this.quizData = data.tudorQuestions;
+            }})
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error.message);
+            });
     }
 }
 

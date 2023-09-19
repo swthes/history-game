@@ -3,7 +3,7 @@
       {
           "id": 1,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Young Halfdan listened to tales of his famous father who was renowned for his valor and wit. Who was this legendary figure?",
           "options": [
               "King Æthelwulf of Wessex",
@@ -16,7 +16,7 @@
       {
           "id": 2,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Fueled by vengeance for their father's death, Halfdan and his brothers assemble a formidable force. What is this army famously known as?",
           "options": [
               "Norse Sea Raiders",
@@ -29,7 +29,7 @@
       {
           "id": 3,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Halfdan's journey took him to the heart of England, where he and one of his brothers laid siege to a major city. Which brother stood by his side?",
           "options": [
               "Sigurd Snake-in-the-Eye",
@@ -42,7 +42,7 @@
       {
           "id": 4,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "After many conquests, Halfdan’s path led him to a significant seat of power. Which city did he rule?",
           "options": [
               "Northumbria",
@@ -55,7 +55,7 @@
       {
           "id": 5,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "The Raven Banner: In battle, Halfdan and his brothers were often recognised by a particular standard, symbolising their lineage and might. What was it?",
           "options": [
               "The Serpent's Sigil",
@@ -68,7 +68,7 @@
       {
           "id": 6,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Revenge Served Cold: Halfdan’s thirst for vengeance was rooted in the belief that a particular English King was responsible for his father’s death. Who was this King?",
           "options": [
               "King Alfred of Wessex",
@@ -81,7 +81,7 @@
       {
           "id": 7,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Halfdan’s journey was not without challenges. At one pivotal battle, he faced the combined forces of Wessex and Mercia. Which battle was it?",
           "options": [
               "Battle of Ashdown",
@@ -94,7 +94,7 @@
       {
           "id": 8,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Throughout his life, Halfdan held many titles, but there’s one he never claimed. Which one?",
           "options": [
               "King of Northumbria",
@@ -107,7 +107,7 @@
       {
           "id": 9,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Halfdan’s life was full of battles and conquests, but his demise is shrouded in mystery. How do some tales suggest he met his end?",
           "options":[
               "Lost in a storm at sea",
@@ -120,7 +120,7 @@
       {
           "id": 10,
           "type": "multipleChoice",
-          "category": "History-Vikings",
+          "category": "halfdan ragnarsson",
           "question": "Despite the passing of time, Halfdan’s legacy remains, echoed in tales and songs. What is he NOT remembered for? ",
           "options": [
               "A son seeking vengeance",
@@ -130,6 +130,7 @@
           ],
           "answer": "A bard of northern lands"
       }
+     
       
   ],
 
