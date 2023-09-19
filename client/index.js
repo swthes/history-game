@@ -6,6 +6,10 @@ let quizTypeSelected = null;
 let lives = localStorage.getItem('lives') ? parseInt(localStorage.getItem('lives'), 10) : 3;
 
 class Quiz {
+   /* * *Initialize Quiz Variables**:
+ *     - Set the initial score to zero.
+ *     - Start with the first question in the questions array.
+ *     - Reset any timers or counters that are in place.*/
     constructor() {
         this.quizData = [];
         this.currentQuestionIndex = 0;
@@ -14,7 +18,7 @@ class Quiz {
         
         this.attachEventListeners();
     }
-
+ 
     startQuiz(quizType) {
        
         
@@ -43,6 +47,8 @@ class Quiz {
         localStorage.setItem('quizType', this.quizTypeSelected);
 
         document.getElementById("start-buttons").style.display = "none";
+        
+        document.getElementById("instructions").style.display = "none";
 
         if (this.lives > 0) {
             this.displayQuestion(this.currentQuestionIndex);
@@ -83,26 +89,42 @@ class Quiz {
                 } else {
                     this.lives--;
                     this.updateLivesDisplay();
-                    if (this.lives <= 0) {
-                        this.displayOutOfLivesModal();
-                    } else if(this.lives <= 2) {
-                        alert("");
-                    }
+                    this.displayLifeMessages();
+                
                 }
             });
             optionsDiv.appendChild(optionBtn);
         });
-    
+        document.getElementById("instructions").style.display = "none";
         document.getElementById("quiz-section").style.display = "block";
     }
 
     displayOutOfLivesModal() {
         
         document.getElementById("out-of-lives-modal").style.display = "block";
+        document.getElementById("instructions").style.display = "none";
         document.getElementById("quiz-section").style.display = "none";
         
     }
-
+    displayLifeMessages(){
+        if(this.quizTypeSelected == "tudors"){
+        if (this.lives <= 0) {
+            this.displayOutOfLivesModal();
+        } else if(this.lives == 2) {
+            alert("But two opportunities remain unto me");
+        }else{
+           alert("Pray, ponder upon the query, but one life remaineth unto thee")
+        }}
+        else if(this.quizTypeSelected == "vikings"){
+            if (this.lives <= 0) {
+                this.displayOutOfLivesModal();
+            } else if(this.lives == 2) {
+                alert("Twegen cyrses me yet standaþ/only got two more chances left");
+            }else{
+               alert("Bid, smea on þa frignung, ac an lif þe yet standeþ/ time a to think about the question only got 1 life left")
+            }
+        }
+    }
     updateLivesDisplay() {
         document.getElementById("lives").innerText = `Lives: ${this.lives}`;
         localStorage.setItem('lives', this.lives);
@@ -127,20 +149,26 @@ class Quiz {
         localStorage.removeItem('quizType');
         localStorage.removeItem('lives');
     }
-
+    displayinstructions(name){
+        document.getElementById("start-buttons").style.display = "none";
+        document.getElementById("instructions").style.display = "block";
+        document.getElementById('start-button').addEventListener('click', () => this.startQuiz(name));
+    }
     attachEventListeners() {
-        document.getElementById('vikings-btn').addEventListener('click', () => this.startQuiz('vikings'));
-        document.getElementById('tudors-btn').addEventListener('click', () => this.startQuiz('tudors'));
+        document.getElementById('vikings-btn').addEventListener('click', () => this.displayinstructions('vikings'));
+        document.getElementById('tudors-btn').addEventListener('click', () => this.displayinstructions('tudors'));
         document.getElementById('back-to-home').addEventListener('click', this.backToHome.bind(this));
         document.getElementById("retry-quiz").addEventListener("click", this.retryQuiz.bind(this));
         document.getElementById("modal-home").addEventListener("click", this.modalHome.bind(this));
-
+        document.getElementById('back-home').addEventListener('click', this.backToHome.bind(this));
+        document.getElementById("instructions").style.display = "none";
         window.addEventListener("DOMContentLoaded", this.loadQuiz.bind(this));
     }
 
     backToHome() {
         this.clearProgress();
         document.getElementById("quiz-section").style.display = "none";
+        document.getElementById("instructions").style.display = "none";
         document.getElementById("start-buttons").style.display = "block";
         this.currentQuestionIndex = 0;
         this.lives = 3;
