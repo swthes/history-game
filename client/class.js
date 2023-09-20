@@ -1,4 +1,4 @@
-class questions {
+class Questions {
     constructor(id,category, questions, options,answer){
        this.id = id;
        this.category=category
@@ -29,4 +29,4 @@ class questions {
     return this.id
 }
 }
-
+module.exports = Questions;

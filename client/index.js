@@ -1,10 +1,4 @@
-// Define initial variables
-let quizData = [];
-let currentQuestionIndex = 0;
-let quizTypeSelected = null;
-// Fetch the number of lives from localStorage or set it to 3 as default
-let lives = localStorage.getItem('lives') ? parseInt(localStorage.getItem('lives'), 10) : 3;
-
+// module.import { Questions  }  = './class.js';
 class Quiz {
    /* * *Initialize Quiz Variables**:
  *     - Set the initial score to zero.
@@ -136,19 +130,25 @@ class Quiz {
         localStorage.removeItem('quizType');
         localStorage.removeItem('lives');
     }
+
     displayinstructions(name){
+        document.getElementById('start-button').addEventListener('click', () => this.startQuiz(name));
+       
         document.getElementById("start-buttons").style.display = "none";
         document.getElementById("instructions").style.display = "block";
-        document.getElementById('start-button').addEventListener('click', () => this.startQuiz(name));
+       
+        document.getElementById('character-select').style.display = 'none';
     }
     attachEventListeners() {
-        document.getElementById('vikings-btn').addEventListener('click', () => this.displayinstructions('vikings'));
-        document.getElementById('tudors-btn').addEventListener('click', () => this.displayinstructions('tudors'));
+        document.getElementById('vikings-btn').addEventListener('click', () => this.getData('vikings'));
+        document.getElementById('tudors-btn').addEventListener('click', () => this.getData('tudors'));
         document.getElementById('back-to-home').addEventListener('click', this.backToHome.bind(this));
         document.getElementById("retry-quiz").addEventListener("click", this.retryQuiz.bind(this));
         document.getElementById("modal-home").addEventListener("click", this.modalHome.bind(this));
         document.getElementById('back-home').addEventListener('click', this.backToHome.bind(this));
         document.getElementById("instructions").style.display = "none";
+        // character event listener
+        document.getElementById('france1').addEventListener('click', () => this.displayinstructions('Napoleon'))
         window.addEventListener("DOMContentLoaded", this.loadQuiz.bind(this));
     }
 
@@ -182,7 +182,8 @@ class Quiz {
             this.startQuiz(localStorage.getItem('quizType'));
         }
     }
-    getData(type,Character){
+    // gets the questions for the time period
+    getData(type){
           fetch('http://localhost:3000/home')
         .then(response => {
             if (!response.ok) {
@@ -191,21 +192,54 @@ class Quiz {
                 return response.json();
             })
         .then(data => {
-            if (quizType === 'vikings') {
+            if (type =='vikings') {
                 this.quizData = data.VikingQuestions;
-            } else if (quizType === 'tudors') {
+            } else if (type == 'tudors') {
                 this.quizData = data.tudorQuestions;
-            }})
+                
+            } else if(type == 'france'){
+                this.quizData = data.FranceQuestions;
+            }else if (type == 'roman'){
+                // this.quizData =
+            }
+            this.characterload(type)
+            }
+            )
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error.message);
             });
     }
+// loads character based on the type
+   characterload(type){
+    console.log('hello');
+    document.getElementById('start-buttons').style.display = 'none';
+        if(type == 'vikings'){
+            
+        }else if (type == 'roman') {
+            
+        }else if(type == 'tudors'){
+         document.getElementById('character-select').style.display = 'block';
+         document.getElementById('character-france').style.display= 'block';
+        }else if(type == 'france'){
+        
+        }
+ }
+ getcharacterQuestions(name){
+    const question = this.quizData
+   switch(name){
+    case 'Napoleon':
+        //  question.NapoleonQuestions.forEach((Element)=>  
+         
+        //  )
+        break;
+   }
+ }
 }
 
 const quizGame = new Quiz();
 
 
-
+// home -> Character -> intructions-> quiz
 
 
 
