@@ -3,11 +3,13 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
+    background-image: url(background.jpg);
 }
 
 h1{
     font-size: 40px;
     text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 #start-buttons,
@@ -40,18 +42,23 @@ button:hover {
     margin: 5px auto;
 }
 
-#character-vikings{
-    display: none;
+#question-text {
+    font-family: 'Grenze Gotisch', cursive;
 }
-#character-romans{
-    display: none;
+
+#options {
+    font-family: 'Quintessential', cursive;
 }
-#character-tudors{
-    display: none;
+
+#lives {
+    font-family: 'VT323', monospace;
 }
-#character-france{
-    display: none;
-}
-#character-select{
-    display: none;
-}
+
+/* #heart-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%
+  } */
+/* #f4f4f4 */
