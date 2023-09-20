@@ -43,7 +43,7 @@ class Quiz {
         
       
     }
-
+   // Function to display the question on the screen
     displayQuestion(index) {
         console.log('in display question');
         if (this.lives <= 0) {
@@ -86,7 +86,7 @@ class Quiz {
         document.getElementById("instructions").style.display = "none";
         document.getElementById("quiz-section").style.display = "block";
     }
-
+    // Function to display the modal when user is out of lives
     displayOutOfLivesModal() {
         console.log('in display out of lives modal');
         document.getElementById("out-of-lives-modal").style.display = "block";
@@ -94,6 +94,7 @@ class Quiz {
         document.getElementById("quiz-section").style.display = "none";
         
     }
+    // Function to display the life messages in the alert box from different time periods
     displayLifeMessages(){
 
         if(this.quizTypeSelected == "tudors"){
@@ -132,11 +133,12 @@ class Quiz {
             }            
         }
     }
+    // Function to update the lives display
     updateLivesDisplay() {
         document.getElementById("lives").innerText = `Lives: ${this.lives}`;
         localStorage.setItem('lives', this.lives);
     }
-
+    // Function to finish the quiz
     finishQuiz() {
         alert("Quiz finished!");
 
@@ -150,13 +152,13 @@ class Quiz {
         this.lives = 3;
         this.updateLivesDisplay();
     }
-
+    // Function to clear all progress from localStorage
     clearProgress() {
         localStorage.removeItem('currentQuestionIndex');
         localStorage.removeItem('quizType');
         localStorage.removeItem('lives');
     }
-
+    // Function to display the instructions
     displayinstructions(name){
         console.log('in display instructions');
         document.getElementById("instructions").style.display = "block";
@@ -228,7 +230,7 @@ class Quiz {
             this.startQuiz(localStorage.getItem('quizType'));
         }
     }
-    // gets the questions for the time period
+    // gets the questions for the time period from api
     getData(type) {
         fetch('http://localhost:3000/home')
             .then(response => {
@@ -265,7 +267,7 @@ class Quiz {
             });
     }
     
-// loads character based on the type
+// loads character based on the type 
    characterload(type){
     this.quizTypeSelected = type;
     console.log('hello');
@@ -410,6 +412,7 @@ class Quiz {
  
   
  }
+
 // character introduction
  characterIntroduction(character) {
     let intro;
@@ -450,6 +453,6 @@ class Quiz {
 
 
 }
-
+// instance of quiz
 const quizGame = new Quiz();
 
