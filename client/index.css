@@ -3,11 +3,13 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
+    background-image: url(background.jpg);
 }
 
 h1{
     font-size: 40px;
     text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 #start-buttons,
@@ -39,3 +41,24 @@ button:hover {
     display: block;
     margin: 5px auto;
 }
+
+#question-text {
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+#options {
+    font-family: 'Quintessential', cursive;
+}
+
+#lives {
+    font-family: 'VT323', monospace;
+}
+
+/* #heart-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%
+  } */
+/* #f4f4f4 */

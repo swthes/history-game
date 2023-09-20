@@ -137,7 +137,7 @@
             {
                 "id": 1,
                 "type": "multipleChoice",
-                "category": "History-Tudors",
+                "category": "HenryVIII",
                 "question": "You are Henry VIII, how many wives did you have during your lifetime?",
                 "options": [
                     "4",
@@ -151,7 +151,7 @@
             {
                 "id": 2,
                 "type": "multipleChoice",
-                "category": "History-Tudors",
+                "category": "HenryVIII",
                 "question": "What is the correct order of your wives?",
                 "options": [
                     "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Parr, Catherine Howard",
@@ -164,7 +164,7 @@
             {
                 "id": 3,
                 "type": "multipleChoice",
-                "category": "History-Tudors",
+                "category": "HenryVIII",
                 "question": "You are married to Catherine of Aragon, and want to leave her, what do you do?",
                 "options": [
                     "Have the Catholic Church allow you to divorce her",
@@ -178,7 +178,7 @@
             {
                 "id": 4,
                 "type": "multipleChoice",
-                "category": "History-Tudors",
+                "category": "HenryVIII",
                 "question": "You are married to Anne Bolyen and have found out she just cheated on you, what do you do?",
                 "options": [
                     "You have her child",
@@ -191,7 +191,7 @@
             {
                 "id": 5,
                 "type": "multipleChoice",
-                "category": "History-Tudors",
+                "category": "HenryVIII",
                 "question": "You're married to Jane Seymor, she gives you what you've always wanted. What is this?",
                 "options": [
                     "A jousting trophy",
@@ -205,7 +205,7 @@
             {
             "id": 6,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "What is the correct order of your wives' cause of death?",
             "options": [
                 "Divorced, beheaded survived, divorced, beheaded, died",
@@ -219,7 +219,7 @@
         {
             "id": 7,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "What happened when you first met Anne of Cleves?",
             "options": [
                 "You fell in love",
@@ -233,7 +233,7 @@
         {
             "id": 8,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "Catherine Howard was related to one of your previous wives, who was she related to?",
             "options": [
                 "Catherine of Aragon",
@@ -247,7 +247,7 @@
         {
             "id": 9,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "What happened when you married Catherine Parr?",
             "options": [
                 "You died in a jousting competition in January 1547",
@@ -261,7 +261,7 @@
         {
             "id": 10,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "Who did you wish to be buried beside?",
             "options": [
                 "Catherine of Aragon",
@@ -273,9 +273,9 @@
             },
 
         { 
-            "id": 10,
+            "id": 11,
             "type": "multipleChoice",
-            "category": "History-Tudors",
+            "category": "HenryVIII",
             "question": "Who were your children?",
             "options": [
                 "Edward VI, Mary I, Elizabeth I",
@@ -284,7 +284,157 @@
                 "Mary I, Edward VII, Elizabeth I, Charles II"
             ],
             "answer": "Edward VI, Mary I, Elizabeth I"
-            }
+            },
+            {
+                "id": 1,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "Who was head of the English Church before the Reformation?",
+                "options": [
+                    "You (The Pope)",
+                    "Henry VIII",
+                    "Archbishop of York",
+                    "Archbishop of Canterbury"
+                ],
+                "answer": "You (The Pope)"
+            },
+
+            {
+                "id": 2,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "Henry VIII has asked for an annulment. Who does he wish to annul with?",
+                "options": [
+                    "Catherine Howard",
+                    "Cather Parr",
+                    "Catherine of Aragon",
+                    "Anne Bolyen"
+                ],
+                "answer": "Catherine of Aragon"
+            },
+            {
+                "id": 3,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "Who did you send over to hear about Henry's wish to annul?",
+                "options": [
+                    "Pope Clement VI",
+                    "Cardinal Wolsey",
+                    "Charles V",
+                    "Cardinal Campeggio"
+                ],
+                "answer": "Cardinal Campeggio"
+            },
+
+            {
+                "id": 4,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "What reasons did you not approve of the annulment? (select all that apply)?",
+                "options": [
+                    "Catherine had a powerful Catholic family who would have dissaproved",
+                    "You would have to go against the exemption of the previous Pope which allowed Henry and Catherine to marry",
+                    "Henry’s argument for having sinned by marrying his brother’s widow was in fact false. He did what was right at the time.",
+                    "All of the above"
+                ],
+                "answer": "All of the above"
+            },
+            {
+                "id": 5,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "Who essentially held you prisoner?",
+                "options": [
+                    "Pope Clement VI",
+                    "Catherine of Aragon’s cousin, Charles V",
+                    "Anne of Cleves’s father, John III",
+                    "Catherine of Aragon’s brother, Prince of Asturias"
+                ],
+                "answer": "Catherine of Aragon’s cousin, Charles V"
+            },
+
+            {
+            "id": 6,
+            "type": "multipleChoice",
+            "category": "Pope",
+            "question": "In what year did Henry VIII create the Church of England?",
+            "options": [
+                "1534",
+                "1543",
+                "1634",
+                "1643"
+            ],
+            "answer": "1534"
+            },
+
+        {
+            "id": 7,
+            "type": "multipleChoice",
+            "category": "Pope",
+            "question": "What religion did the Church of England follow?",
+            "options": [
+                "Englandism",
+                "Protestantism",
+                "Buddhism",
+                "Catholicism"
+            ],
+            "answer": "Protestantism"
+            },
+
+        {
+            "id": 8,
+            "type": "multipleChoice",
+            "category": "Pope",
+            "question": "Who supported Henry VIII to carry out the Dissolution of the Monasteries?",
+            "options": [
+                "Thomas Cranmer",
+                "Sir Thomas More",
+                "Thomas Cromwell",
+                "Thomas Wolsey"
+            ],
+            "answer": "Thomas Cromwell"
+            },
+
+        {
+            "id": 9,
+            "type": "multipleChoice",
+            "category": "Pope",
+            "question": "Who in Henry’s inner circle disapproved of the Church of England?",
+            "options": [
+                "Sir Thomas More",
+                "Elizabeth Barton",
+                "Thomas Cranmer",
+                "Thomas Wolsey"
+            ],
+            "answer": "Sir Thomas More"
+            },
+
+        {
+            "id": 10,
+            "type": "multipleChoice",
+            "category": "Pope",
+            "question": "Which of Henry’s children was the most devout Protestant?",
+            "options": [
+                "Mary I",
+                "Elizabeth I",
+                "Edward VI",
+                "Charles II"
+            ],
+            "answer": "Edward VI"
+            },
+            {
+                "id": 11,
+                "type": "multipleChoice",
+                "category": "Pope",
+                "question": "Which of these Tudor monarchs restored the English Church to Catholisim?",
+                "options": [
+                    "Elizabeth I",
+                    "Mary I",
+                    "Edward VI",
+                    "Henry VIIII"
+                ],
+                "answer": "Mary I"
+                }
         ]
 
 }
