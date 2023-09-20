@@ -39,3 +39,19 @@ button:hover {
     display: block;
     margin: 5px auto;
 }
+
+#character-vikings{
+    display: none;
+}
+#character-romans{
+    display: none;
+}
+#character-tudors{
+    display: none;
+}
+#character-france{
+    display: none;
+}
+#character-select{
+    display: none;
+}
