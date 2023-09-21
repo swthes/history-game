@@ -76,6 +76,7 @@ class Quiz {
                     }
                 } else {
                     this.lives--;
+                    optionBtn.disabled = true;
                     this.updateLivesDisplay();
                     this.displayLifeMessages();
                 
