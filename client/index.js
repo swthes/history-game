@@ -131,6 +131,15 @@ class Quiz {
             } else {
                 alert("Cogita tempus de quaestione; una tantum vita reliqua est tibi. / Take some time to think about the question; you only have one life left.");
             }            
+        } else if(this.quizTypeSelected == "egypt"){
+            if(this.lives <= 0){
+                this.displayOutOfLivesModal();
+            } else if (this.lives == 2) {
+                alert("Senetj heru mesut shema. / You have two days (lives) remaining.");
+            } else {
+                alert("Heseb kher nedjer en pet. Senetj heru mesu shema. / Reflect upon the words of wisdom. You have one day (lives) remaining.");
+            }
+            
         }
     }
     // Function to update the lives display
@@ -162,7 +171,7 @@ class Quiz {
     displayinstructions(name){
         console.log('in display instructions');
         document.getElementById("instructions").style.display = "block";
-        document.getElementById("charcter-intro").textContent = this.characterIntroduction(name);
+        document.getElementById("charcter-intro").innerHTML = this.characterIntroduction(name);
         document.getElementById('start-button').addEventListener('click', () => this.startQuiz(name));
        
         //hhides the start buttons
@@ -177,6 +186,7 @@ class Quiz {
         document.getElementById('tudors-btn').addEventListener('click', () => this.getData('tudors'));
         document.getElementById('france-btn').addEventListener('click', () => this.getData('france'));
         document.getElementById('romans-btn').addEventListener('click', () => this.getData('roman'));
+        document.getElementById('egypt-btn').addEventListener('click', () => this.getData('egypt'));
         document.getElementById('back-to-home').addEventListener('click', this.backToHome.bind(this));
         document.getElementById('back-to-homeQ').addEventListener('click', this.backToHome.bind(this));
         
@@ -193,6 +203,8 @@ class Quiz {
         document.getElementById('Pope').addEventListener('click', () => this.getcharacterQuestions('Pope'))
         document.getElementById('JuliusCaeser').addEventListener('click', () => this.getcharacterQuestions('JuliusCaeser'))
         document.getElementById('AugustusEmperor').addEventListener('click', () => this.getcharacterQuestions('AugustusEmperor'))
+        document.getElementById('Tutankhamun').addEventListener('click', () => this.getcharacterQuestions('Tutankhamun'))
+        document.getElementById('Cleopatra').addEventListener('click', () => this.getcharacterQuestions('Cleopatra'))
 
         window.addEventListener("DOMContentLoaded", this.loadQuiz.bind(this));
     }
@@ -255,6 +267,9 @@ class Quiz {
                     case 'roman':
                         this.quizData = data.RomanQuestions;
                         break;
+                    case 'egypt':
+                        this.quizData = data.EgyptQuestions;
+                        break;
                     default:
                         console.error('Unknown quiz type:', type);
                         
@@ -273,7 +288,7 @@ class Quiz {
     console.log('hello');
     document.getElementById('start-buttons').style.display = 'none';
         if(type == 'vikings'){   
-
+            document.getElementById("instructions").style.fontFamily = "Eagle Lake, cursive";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-vikings').style.display= 'block';
             
@@ -281,32 +296,42 @@ class Quiz {
         
             document.getElementById('character-tudors').style.display= 'none';
             document.getElementById('character-romans').style.display= 'none';
+            document.getElementById('character-egypt').style.display= 'none';
         }else if (type == 'roman') {
-          
+            document.getElementById("instructions").style.fontFamily = "Cinzel, serif";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-romans').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';
             document.getElementById('character-vikings').style.display= 'none';
             document.getElementById('character-tudors').style.display= 'none';
+            document.getElementById('character-egypt').style.display= 'none';
            
         }else if(type == 'tudors'){
-          
+        document.getElementById("instructions").style.fontFamily = "Stoke, serif";
          document.getElementById('character-select').style.display = 'block';
          document.getElementById('character-tudors').style.display= 'block';
          document.getElementById('character-france').style.display= 'none';
          document.getElementById('character-vikings').style.display= 'none';
-       
+         document.getElementById('character-egypt').style.display= 'none';
          document.getElementById('character-romans').style.display= 'none';
         }else if(type == 'france'){
            
        
-            
+            document.getElementById("instructions").style.fontFamily = "Cinzel Decorative, cursive";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-france').style.display= 'block';
             document.getElementById('character-vikings').style.display= 'none';
             document.getElementById('character-tudors').style.display= 'none';
             document.getElementById('character-romans').style.display= 'none';
-        } 
+            document.getElementById('character-egypt').style.display= 'none';
+        } else if(type == 'egypt'){
+            document.getElementById('character-select').style.display = 'block';
+            document.getElementById('character-egypt').style.display= 'block';
+            document.getElementById('character-france').style.display= 'none';
+            document.getElementById('character-vikings').style.display= 'none';
+            document.getElementById('character-tudors').style.display= 'none';
+            document.getElementById('character-romans').style.display= 'none';
+        }
         else{
             console.log('no character selected');
         }
@@ -405,6 +430,27 @@ class Quiz {
            this.quizData = newQuestion;
            this.displayinstructions(name);
         break;
+    case 'Tutankhamun':
+        console.log(name);
+        
+        question.Tutankhamun.forEach((Element)=>{
+            let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
+            newQuestion.push(Q);
+           })
+           this.quizData = newQuestion;
+           this.displayinstructions(name);
+        break;
+    case 'Cleopatra':
+        console.log(name);
+        
+        question.Cleopatra.forEach((Element)=>{
+            let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
+            newQuestion.push(Q);
+           })
+           this.quizData = newQuestion;
+           this.displayinstructions(name);
+        break;
+
     default:
         console.log('no character selected');
         break;  
@@ -419,39 +465,55 @@ class Quiz {
     
     switch(character) {
         case "Halfdan":
-            intro = "You are Halfdan, a renowned Viking leader. Your task is to ensure the time-space continuum remains unbroken by answering questions that relate to you and your time period.";
+            intro = "You are Halfdan, a renowned Viking leader.<br/>Your task is to ensure the time-space continuum remains unbroken by answering questions that relate to you and your time period.";
+            intro = `<p id="instruction-Halfdan">${intro}</p>`
             break;
         case "LeifErikson":
-            intro = "You are Leif Erikson, the famed Norse explorer. Your duty is to navigate the complexities of time and space by providing answers about your own era and experiences.";
+            intro = "You are Leif Erikson, the famed Norse explorer<br/>Your duty is to navigate the complexities of time and space by providing answers about your own era and experiences.";
+            intro = `<p id="instruction-LeifErikson">${intro}</p>`
             break;
         case "HenryVIII":
-            intro = "You are King Henry VIII, the powerful Tudor monarch. The realm of time is now in your hands. Answer questions about your reign and period to maintain its balance.";
+            intro = "You are King Henry VIII, the powerful Tudor monarch.<br/>The realm of time is now in your hands. Answer questions about your reign and period to maintain its balance.";
+            intro = `<p id="instruction-HenryVIII">${intro}</p>`
             break;
         case "Pope":
-            intro = "You are the Pope, the spiritual leader of the Catholic Church. It's now your divine duty to keep the time-space continuum sanctified by answering questions pertaining to your papal reign and the Church's history.";
+            intro = "You are the Pope, the spiritual leader of the Catholic Church.<br/>It's now your divine duty to keep the time-space continuum sanctified by answering questions pertaining to your papal reign and the Church's history.";
+            intro = `<p id="instruction-Pope">${intro}</p>`
             break;
         case "Napoleon":
-            intro = "You are Napoleon Bonaparte, the formidable French general. Conquer the challenges of time by answering questions about your conquests and the Napoleonic era.";
+            intro = "You are Napoleon Bonaparte, the formidable French general.<br/>Conquer the challenges of time by answering questions about your conquests and the Napoleonic era.";
+            intro = `<p id="instruction-Napoleon">${intro}</p>`
             break;
         case "JoanaofArc":
-            intro = "You are Joan of Arc, the Maid of Orléans and the heroine of France. The fate of the time-space continuum now rests on your answers about your life and the Hundred Years' War.";
+            intro = "You are Joan of Arc, the Maid of Orléans and the heroine of France.<br/>The fate of the time-space continuum now rests on your answers about your life and the Hundred Years' War.";
+            intro = `<p id="instruction-JoanofArc">${intro}</p>`
             break;
         case "JuliusCaeser":
-            intro = "You are Julius Caesar, the legendary Roman general. Rome wasn't built in a day, and now you must ensure time remains by answering questions about your campaigns and Roman history.";
+            intro = "You are Julius Caesar, the legendary Roman general.<br/>Rome wasn't built in a day, and now you must ensure time remains by answering questions about your campaigns and Roman history.";
+            intro = `<p id="instruction-JuliusCaeser">${intro}</p>`
             break;
         case "AugustusEmperor":
-            intro = "You are Augustus, the first Emperor of Rome. The empire of time now awaits your decisions. Respond correctly to inquiries about the Augustan Age and your reign to ensure its glory.";
+            intro = "You are Augustus, the first Emperor of Rome<br/>The empire of time now awaits your decisions. Respond correctly to inquiries about the Augustan Age and your reign to ensure its glory.";
+            intro = `<p id="instruction-AugustusEmperor">${intro}</p>`
+            break;
+        case "Tutankhamun":
+            intro = "You are Tutankhamun, the young Pharaoh of Egypt. Your golden mask and tomb are symbols of ancient Egyptian glory. Answer accurately about your reign and life to unravel the mysteries of your time.";
+            break;
+        case "Cleopatra":
+            intro = "You are Cleopatra, the last active Pharaoh of Ptolemaic Egypt. Your allure and intelligence captivated even the greatest leaders of Rome. Address the questions about your life and legacy to reignite the legend.";
             break;
         default:
-            intro = "Welcome, timekeeper. Your mission, should you choose to accept it, is to maintain the integrity of the time-space continuum by answering questions related to your role and era.";
+            intro = "Welcome, timekeeper.<br/>Your mission, should you choose to accept it, is to maintain the integrity of the time-space continuum by answering questions related to your role and era.";
+            intro = `<p id="instruction-timekeeper">${intro}</p>`
             break;
     }
     
-    return intro;
+    return intro; 
 }
 
-
-
+// EgyptQuestions": {
+//     "Tutankhamun"
+// "Cleopatra":
 }
 // instance of quiz
 const quizGame = new Quiz();

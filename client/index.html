@@ -5,36 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel+Decorative&family=Cinzel:wght@500&family=Eagle+Lake&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Noto+Sans+Egyptian+Hieroglyphs&family=Quintessential&family=Stoke:wght@300&family=UnifrakturMaguntia&family=VT323&display=swap" rel="stylesheet">
     <title>Through the Ages</title>
 </head>
 
 <body>
-    <h1>THROUGH THE AGES</h1>
+    <h1>Through the Ages</h1>
     <div id="start-buttons">
         <button id="vikings-btn">Start Vikings Quiz</button>
         <button id="tudors-btn">Start Tudors Quiz</button>
         <button id="france-btn">Start France Quiz</button>
         <button id="romans-btn">Start Romans Quiz</button>
+        <button id="egypt-btn">Start Egypt Quiz</button>
         
     </div>
    <div id="instructions" style="display: none;"> 
-        <h1>Rules of the game</h1>
-        <p id="instruction">Welcome to Through the Ages! </p>
-        <p id="charcter-intro"> </p>                              
-        <p id="instruction">
-            You will be given a question and 4 possible answers. 
-            You have 3 lives. 
-            If you get a question wrong, you lose a life. 
-            If you get a question right, you move on to the next question. 
-            If you lose all 3 lives, you lose the game. 
-            If you get all 10 questions right, you win the game. Good luck!
-        </p>
+        <h1 id="rule-title">Rules of the game</h1>
+        <div id="instruction-box">
+            <p id="instruction">Welcome to Through the Ages! </p>
+            <p id="charcter-intro"> </p>                              
+            <p id="instruction">
+                You will be given a question and 4 possible answers.<br/>
+                You have 3 lives.<br/>
+                If you get a question wrong, you lose a life.<br/>
+                If you get a question right, you move on to the next question.<br/> 
+                If you lose all 3 lives, you lose the game.<br/> 
+                If you get all 10 questions right, you win the game.<br/>
+                <br/> 
+                Good luck!<br/>
+            </p>
+        </div>
         <button id="start-button">Play</button>
         <button id="back-home">home</button>
    </div>
    <div id="character-select">
      
-        <h1>Choose your character</h1>
+        <h1 id="character-title">Choose your character</h1>
         <div id="character-vikings">
             <button id="halfdan">halfdan</button>
             <button id="leif-Erikson">leif Erikson</button>
@@ -52,6 +60,10 @@
             <button id="JuliusCaeser">Julius Caeser</button>
             <button id="AugustusEmperor">Augustus Emperor</button>
            
+        </div>
+        <div id="character-egypt"> 
+            <button id="Tutankhamun">Tutankhamun</button>
+            <button id="Cleopatra">Cleopatra</button>
         </div>
         <button id="back-to-homeQ">Back to Home</button>
    </div>

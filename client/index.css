@@ -14,11 +14,11 @@ h1{
 
 #start-buttons,
 #quiz-section,
+#instruction-box,
 #out-of-lives-modal {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,6 +40,14 @@ button:hover {
 #options button {
     display: block;
     margin: 5px auto;
+}
+
+#rule-title, #character-title {
+    font-size: 30px;
+}
+
+#instructions {
+    font-family: 'IM Fell English SC', serif;
 }
 
 #question-text {
