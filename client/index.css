@@ -15,7 +15,7 @@ h1{
 #start-buttons,
 #quiz-section,
 #instruction-box,
-/* #character-vikings, */
+#character-vikings,
 #character-tudors,
 #character-france,
 #character-romans,
@@ -26,6 +26,9 @@ h1{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(244,244,244,0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-button {
@@ -79,6 +82,10 @@ button:hover {
     background-color: maroon;
 }
 
+#start-button {
+    background-color: maroon;
+}
+
 #rule-title, #character-title {
     font-size: 30px;
 }
@@ -89,9 +96,10 @@ button:hover {
 
 #question-text {
     font-family: 'Grenze Gotisch', cursive;
+    font-size: 25px;
 }
 
-#options {
+#options{
     font-family: 'Quintessential', cursive;
 }
 
@@ -102,9 +110,12 @@ button:hover {
 /* resize heart from js file */
 
 #lives .heart-div img {
-    width: 50px;
+    height: 25px;
+    width: auto;
     /* position it on the right */
     float: right;
+    /* display: inline-block; */
+
 }
 
 #lives .lives-text {
@@ -113,10 +124,12 @@ button:hover {
 }
 
 #character-image-container {
-    float: left; /* Adjust as needed; could also be 'right' */
-    margin-right: 20px; /* Space between the image and the text/content */
+    display: block; /* Adjust as needed; could also be 'right' */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 20px; Space between the image and the text/content */
     width: 150px; /* Width of the container */
-    height: 150px; /* Height of the container */
+    height: 200px; /* Height of the container */
 }
 
 #character-image-container img {

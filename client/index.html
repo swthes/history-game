@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel+Decorative&family=Cinzel:wght@500&family=Eagle+Lake&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Noto+Sans+Egyptian+Hieroglyphs&family=Quintessential&family=Stoke:wght@300&family=UnifrakturMaguntia&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel+Decorative&family=Cinzel:wght@500&family=Eagle+Lake&family=Forum&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Noto+Sans+Egyptian+Hieroglyphs&family=Quintessential&family=Stoke:wght@300&family=UnifrakturMaguntia&family=VT323&display=swap" rel="stylesheet">
     <title>Through the Ages</title>
 </head>
 
@@ -25,7 +25,7 @@
         </div>
         <br>
         <div class="img-button" id="france-btn">
-            <img src="character-images/napolean.jpg" alt="France character">
+            <img src="character-images/napoleon.jpg" alt="France character">
             <span>France</span>
         </div>
         <div class="img-button" id="romans-btn">
@@ -57,40 +57,77 @@
                 Good luck!<br/>
             </p>
         </div>
+        <button id="back-home">Return Home</button>
         <button id="start-button">Play</button>
-        <button id="back-home">home</button>
+        
    </div>
    <div id="character-select">
      
         <h1 id="character-title">Choose your character</h1>
-        <div id="character-vikings">
-            <button id="halfdan">Halfdan</button>
-            <button id="leif-Erikson">Leif Erikson</button>
-        </div>
-        <div id="character-tudors">
-            <button id="HenryVIII">Henry VIII</button>
-            <button id="Pope">Pope Clement VII</button>
-           
-        </div>
-        <div id="character-france">
-            <button id="Napoleon">Napoleon</button>
-            <button id="JoanaofArc">Joana of Arc</button>
-        </div>
-        <div id="character-romans">
-            <button id="JuliusCaeser">Julius Caeser</button>
-            <button id="AugustusEmperor">Augustus Emperor</button>
-           
-        </div>
-        <div id="character-egypt"> 
-            <button id="Tutankhamun">Tutankhamun</button>
-            <button id="Cleopatra">Cleopatra</button>
-        </div>
-        <button id="back-to-homeQ">Back to Home</button>
+        
+            <!-- <button id="vikings-btn">Start Vikings Quiz</button> -->
+            <div id="character-vikings">
+                <div class="img-button" id="halfdan">
+                    <img src="character-images/Halfdan.jpg" alt="Viking character">
+                    <span>Halfdan</span>
+                </div>
+                <div class="img-button" id="leif-Erikson">
+                    <img src="character-images/Leif-Erikson.jjpg.jpeg" alt="Viking character">
+                    <span>Leif Erikson</span>
+                </div>
+            </div>
+
+            <div id="character-tudors">
+                <div class="img-button" id="HenryVIII">
+                    <img src="character-images/henryviii.jpg" alt="Tudor character">
+                    <span>Henry VIII</span>
+                </div>
+                <div class="img-button" id="Pope">
+                    <img src="character-images/pope-clementvii.jpeg" alt="Tudor character">
+                    <span>Pope Clement VII</span>
+                </div>
+            </div>
+
+            <div id="character-france">
+                <div class="img-button" id="Napoleon">
+                    <img src="character-images/napoleon.jpg" alt="France character">
+                    <span>Napoleon</span>
+                </div>
+                <div class="img-button" id="JoanaofArc">
+                    <img src="character-images/joan-of-arc.jpg" alt="France character">
+                    <span>Joana of Arc</span>
+                </div>
+            </div>
+
+            <div id="character-romans">
+                <div class="img-button" id="JuliusCaeser">
+                    <img src="character-images/julius-caesar.jpg" alt="Roman character">
+                    <span>Julius Caeser</span>
+                </div>
+                <div class="img-button" id="AugustusEmperor">
+                    <img src="character-images/augustus.jpg" alt="Roman character">
+                    <span>Augustus Emperor</span>
+                </div>
+            </div>
+            
+            <div id="character-egypt">
+                <div class="img-button" id="Tutankhamun">
+                    <img src="character-images/tutankamun.jpg" alt="Egyptian character">
+                    <span>Tutankhamun</span>
+                </div>
+                <div class="img-button" id="Cleopatra">
+                    <img src="character-images/cleopatra.jpg" alt="Egyptian character">
+                    <span>Cleopatra</span>
+                </div>
+            </div>
+
+        <button id="back-to-homeQ">Return Home</button>
    </div>
     
     <div id="quiz-section" style="display: none;">
+        <p id="lives">Lives: 3</p>
         <div id="character-image-container">
-            <img src="character-images/napolean.jpg" alt="Napolean">
+            <img src="character-images/napoleon.jpg" alt="Napoleon">
             <img src="character-images/Halfdan.jpg" alt="Halfdan">
             <img src="character-images/henryviii.jpg" alt="HenryVIII">
             <img src="character-images/julius-caesar.jpg" alt="JuliusCaeser">
@@ -101,16 +138,15 @@
             <img src="character-images/pope-clement-vii.jpg" alt="PopeClementVII">
             <img src="character-images/augustus-emperor.jpg" alt="AugustusEmperor">
         </div>
-        <p id="lives">Lives: 3</p>
         <p id="question-text"></p>
         <div id="options"></div>
-        <button id="back-to-home">Back to Home</button>
+        <button id="back-to-home">Return Home</button>
     </div>
 
     <div id="out-of-lives-modal" style="display: none;">
         <p>You're out of lives!</p>
         <button id="retry-quiz">Retry Quiz</button>
-        <button id="modal-home">Home</button>
+        <button id="modal-home"> Return Home</button>
     </div>
     <script src="class.js"></script>
     <script src="index.js"></script>
