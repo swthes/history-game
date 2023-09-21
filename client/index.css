@@ -15,7 +15,7 @@ h1{
 #start-buttons,
 #quiz-section,
 #instruction-box,
-#character-vikings,
+/* #character-vikings, */
 #character-tudors,
 #character-france,
 #character-romans,
@@ -28,19 +28,45 @@ h1{
     background-color: rgba(244,244,244,0.5);
 }
 
+.img-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-button img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.img-button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);  /* semi-transparent background */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;  /* Adjust based on your image's height */
+}
+
+
 button {
     padding: 10px 20px;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: rgb(185, 109, 10);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #a35f0b;
 }
 
 #character-select {
@@ -50,6 +76,7 @@ button:hover {
 #options button {
     display: block;
     margin: 5px auto;
+    background-color: maroon;
 }
 
 #rule-title, #character-title {
@@ -72,11 +99,34 @@ button:hover {
     font-family: 'VT323', monospace;
 }
 
-/* #heart-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%
-  } */
-/* #f4f4f4 */
+/* resize heart from js file */
+
+#lives .heart-div img {
+    width: 50px;
+    /* position it on the right */
+    float: right;
+}
+
+#lives .lives-text {
+    clear: both;
+    text-align: right;
+}
+
+#character-image-container {
+    float: left; /* Adjust as needed; could also be 'right' */
+    margin-right: 20px; /* Space between the image and the text/content */
+    width: 150px; /* Width of the container */
+    height: 150px; /* Height of the container */
+}
+
+#character-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the aspect ratio is maintained */
+}
+
+
+
+
+
+  

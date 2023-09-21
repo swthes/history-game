@@ -14,14 +14,34 @@
 <body>
     <h1>Through the Ages</h1>
     <div id="start-buttons">
-        <button id="vikings-btn">Start Vikings Quiz</button>
-        <button id="tudors-btn">Start Tudors Quiz</button>
-        <button id="france-btn">Start France Quiz</button>
-        <button id="romans-btn">Start Romans Quiz</button>
-        <button id="egypt-btn">Start Egypt Quiz</button>
+        <!-- <button id="vikings-btn">Start Vikings Quiz</button> -->
+        <div class="img-button" id="vikings-btn">
+            <img src="character-images/Halfdan.jpg" alt="Viking character">
+            <span>Vikings</span>
+        </div>
+        <div class="img-button" id="tudors-btn">
+            <img src="character-images/henryviii.jpg" alt="Tudor character">
+            <span>Tudors</span>
+        </div>
+        <br>
+        <div class="img-button" id="france-btn">
+            <img src="character-images/napolean.jpg" alt="France character">
+            <span>France</span>
+        </div>
+        <div class="img-button" id="romans-btn">
+            <img src="character-images/julius-caesar.jpg" alt="Roman character">
+            <span>Romans</span>
+        </div>
+        <br>
+        <div class="img-button" id="egypt-btn">
+            <img src="character-images/tutankamun.jpg" alt="Egyptian character">
+            <span>Egypt</span>
+        </div>
         
     </div>
-   <div id="instructions" style="display: none;"> 
+   <div id="instructions" style="display: none;">
+
+        
         <h1 id="rule-title">Rules of the game</h1>
         <div id="instruction-box">
             <p id="instruction">Welcome to Through the Ages! </p>
@@ -69,6 +89,18 @@
    </div>
     
     <div id="quiz-section" style="display: none;">
+        <div id="character-image-container">
+            <img src="character-images/napolean.jpg" alt="Napolean">
+            <img src="character-images/Halfdan.jpg" alt="Halfdan">
+            <img src="character-images/henryviii.jpg" alt="HenryVIII">
+            <img src="character-images/julius-caesar.jpg" alt="JuliusCaeser">
+            <img src="character-images/tutankamun.jpg" alt="Tutankhamun">
+            <img src="character-images/Leif-Erikson.jjpg.jpeg" alt="LeifErikson">
+            <img src="character-images/joana-of-arc.jpg" alt="JoanaofArc">
+            <img src="character-images/cleopatra.jpg" alt="Cleopatra">
+            <img src="character-images/pope-clement-vii.jpg" alt="PopeClementVII">
+            <img src="character-images/augustus-emperor.jpg" alt="AugustusEmperor">
+        </div>
         <p id="lives">Lives: 3</p>
         <p id="question-text"></p>
         <div id="options"></div>
