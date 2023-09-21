@@ -15,11 +15,17 @@ h1{
 #start-buttons,
 #quiz-section,
 #instruction-box,
+#character-vikings,
+#character-tudors,
+#character-france,
+#character-romans,
+#character-egypt,
 #out-of-lives-modal {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(244,244,244,0.5);
 }
 
 button {
