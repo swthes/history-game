@@ -5,21 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Quintessential&family=UnifrakturMaguntia&family=VT323&display=swap" rel="stylesheet">
     <title>Through the Ages</title>
 </head>
 
 <body>
-    <h1>Through the Ages</h1>
+    <h1>THROUGH THE AGES</h1>
     <div id="start-buttons">
         <button id="vikings-btn">Start Vikings Quiz</button>
         <button id="tudors-btn">Start Tudors Quiz</button>
+        <button id="france-btn">Start France Quiz</button>
+        <button id="romans-btn">Start Romans Quiz</button>
+        
     </div>
-
+   <div id="instructions" style="display: none;"> 
+        <h1>Rules of the game</h1>
+        <p id="instruction">Welcome to Through the Ages! </p>
+        <p id="charcter-intro"> </p>                              
+        <p id="instruction">
+            You will be given a question and 4 possible answers. 
+            You have 3 lives. 
+            If you get a question wrong, you lose a life. 
+            If you get a question right, you move on to the next question. 
+            If you lose all 3 lives, you lose the game. 
+            If you get all 10 questions right, you win the game. Good luck!
+        </p>
+        <button id="start-button">Play</button>
+        <button id="back-home">home</button>
+   </div>
+   <div id="character-select">
+     
+        <h1>Choose your character</h1>
+        <div id="character-vikings">
+            <button id="halfdan">halfdan</button>
+            <button id="leif-Erikson">leif Erikson</button>
+        </div>
+        <div id="character-tudors">
+            <button id="HenryVIII">Henry VIII</button>
+            <button id="Pope">Pope</button>
+           
+        </div>
+        <div id="character-france">
+            <button id="Napoleon">Napoleon</button>
+            <button id="JoanaofArc">Joana of Arc</button>
+        </div>
+        <div id="character-romans">
+            <button id="JuliusCaeser">Julius Caeser</button>
+            <button id="AugustusEmperor">Augustus Emperor</button>
+           
+        </div>
+        <button id="back-to-homeQ">Back to Home</button>
+   </div>
+    
     <div id="quiz-section" style="display: none;">
-        <img src="heart-icon.png" alt="heart-icon" id="heart-icon" height="25"/>
         <p id="lives">Lives: 3</p>
         <p id="question-text"></p>
         <div id="options"></div>
@@ -31,8 +68,24 @@
         <button id="retry-quiz">Retry Quiz</button>
         <button id="modal-home">Home</button>
     </div>
-
+    <script src="class.js"></script>
     <script src="index.js"></script>
+    
 </body>
 
 </html>
+<!--"VikingQuestions": {
+        "HalfdanQuestions": 
+    "LeifEriksonQuestions": 
+
+"tudorQuestions": {
+                    "HenryVIIIQuestions"
+                "PopeQuestions":
+            
+  "FranceQuestions": {
+            "NapoleonQuestions"   
+         "JoanaofArcQuestions"
+        
+        "RomanQuestions": {
+                        "JuliusCaeser":
+                      "AugustusEmperor":  -->   

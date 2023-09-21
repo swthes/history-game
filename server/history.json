@@ -1,440 +1,1274 @@
 {
-  "VikingQuestions": [
-      {
-          "id": 1,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Young Halfdan listened to tales of his famous father who was renowned for his valor and wit. Who was this legendary figure?",
-          "options": [
-              "King Æthelwulf of Wessex",
-              "Ivar the Boneless",
-              "Bjorn Ironside",
-              "Ragnar Lothbrok"
-          ],
-          "answer": "Ragnar Lothbrok"
-      },
-      {
-          "id": 2,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Fueled by vengeance for their father's death, Halfdan and his brothers assemble a formidable force. What is this army famously known as?",
-          "options": [
-              "Norse Sea Raiders",
-              "The Shieldwall Brigade",
-              "Viking Invaders",
-              "Great Heathen Army"
-          ],
-          "answer": "Great Heathen Army"
-      },
-      {
-          "id": 3,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Halfdan's journey took him to the heart of England, where he and one of his brothers laid siege to a major city. Which brother stood by his side?",
-          "options": [
-              "Sigurd Snake-in-the-Eye",
-              "Bjorn Ironside",
-              "Ivar the Boneless",
-              "Ubbe"
-          ],
-          "answer": "Ivar the Boneless"
-      },
-      {
-          "id": 4,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "After many conquests, Halfdan’s path led him to a significant seat of power. Which city did he rule?",
-          "options": [
-              "Northumbria",
-              "Wessex",
-              "Dublin",
-              "Mercia"
-          ],
-          "answer": "Dublin"
-      },
-      {
-          "id": 5,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "The Raven Banner: In battle, Halfdan and his brothers were often recognised by a particular standard, symbolising their lineage and might. What was it?",
-          "options": [
-              "The Serpent's Sigil",
-              "The Shield of Valhalla",
-              "The Wolf's Emblem",
-              "The Raven Banner"
-          ],
-          "answer": "The Raven Banner"
-      },
-      {
-          "id": 6,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Revenge Served Cold: Halfdan’s thirst for vengeance was rooted in the belief that a particular English King was responsible for his father’s death. Who was this King?",
-          "options": [
-              "King Alfred of Wessex",
-              "King Æthelwulf of Wessex",
-              "King Ecgberht of Wessex",
-              "King Aelle of Northumbria"
-          ],
-          "answer": "King Aelle of Northumbria"
-      },
-      {
-          "id": 7,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Halfdan’s journey was not without challenges. At one pivotal battle, he faced the combined forces of Wessex and Mercia. Which battle was it?",
-          "options": [
-              "Battle of Ashdown",
-              "Battle of Stamford Bridge",
-              "Battle of Maldon",
-              "Battle of Reading"
-          ],
-          "answer": "Battle of Ashdown"
-      },
-      {
-          "id": 8,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Throughout his life, Halfdan held many titles, but there’s one he never claimed. Which one?",
-          "options": [
-              "King of Northumbria",
-              "King of Dublin",
-              "King of York",
-              "King of Denmark"
-          ],
-          "answer": "King of Denmark"
-      },
-      {
-          "id": 9,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Halfdan’s life was full of battles and conquests, but his demise is shrouded in mystery. How do some tales suggest he met his end?",
-          "options":[
-              "Lost in a storm at sea",
-              "Killed in a duel honour",
-              "Assassinated in the alleys of Dublin",
-              "Slain by a mythical beast"
-          ],
-          "answer": "Assassinated in the alleys of Dublin"
-      },
-      {
-          "id": 10,
-          "type": "multipleChoice",
-          "category": "History-Vikings",
-          "question": "Despite the passing of time, Halfdan’s legacy remains, echoed in tales and songs. What is he NOT remembered for? ",
-          "options": [
-              "A son seeking vengeance",
-              "A fearsome Viking Leader",
-              "A bard of northern lands",
-              "Ruler of Dublin"
-          ],
-          "answer": "A bard of northern lands"
-      }
-      
-  ],
-
-  "tudorQuestions": [
+    "VikingQuestions": {
+        "HalfdanQuestions": [
             {
                 "id": 1,
                 "type": "multipleChoice",
-                "category": "HenryVIII",
-                "question": "You are Henry VIII, how many wives did you have during your lifetime?",
+                "category": "History-Vikings",
+                "question": "Young Halfdan listened to tales of his famous father who was renowned for his valor and wit. Who was this legendary figure?",
                 "options": [
-                    "4",
-                    "7",
-                    "6",
-                    "8"
+                    "King Æthelwulf of Wessex",
+                    "Ivar the Boneless",
+                    "Bjorn Ironside",
+                    "Ragnar Lothbrok"
                 ],
-                "answer": "6"
+                "answer": "Ragnar Lothbrok"
             },
-
             {
                 "id": 2,
                 "type": "multipleChoice",
-                "category": "HenryVIII",
-                "question": "What is the correct order of your wives?",
+                "category": "History-Vikings",
+                "question": "Fueled by vengeance for their father's death, Halfdan and his brothers assemble a formidable force. What is this army famously known as?",
                 "options": [
-                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Parr, Catherine Howard",
-                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr",
-                    "Catherine of Aragon, Anne of Cleves, Anne Boleyn, Jane Seymour, Catherine Parr, Catherine Howard",
-                    "Catherine Howard, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine of Aragon, Catherine Parr"
+                    "Norse Sea Raiders",
+                    "The Shieldwall Brigade",
+                    "Viking Invaders",
+                    "Great Heathen Army"
                 ],
-                "answer": "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr"
-            },
-            {
-                "id": 3,
-                "type": "multipleChoice",
-                "category": "HenryVIII",
-                "question": "You are married to Catherine of Aragon, and want to leave her, what do you do?",
-                "options": [
-                    "Have the Catholic Church allow you to divorce her",
-                    "Behead her",
-                    "Have the Protestant Church allow you to divorce her",
-                    "Create the Church of England to divorce her"
-                ],
-                "answer": "Create the Church of England to divorce her"
-            },
-
-            {
-                "id": 4,
-                "type": "multipleChoice",
-                "category": "HenryVIII",
-                "question": "You are married to Anne Bolyen and have found out she just cheated on you, what do you do?",
-                "options": [
-                    "You have her child",
-                    "Divorce her",
-                    "Behead her",
-                    "Exile her"
-                ],
-                "answer": "Behead her"
-            },
-            {
-                "id": 5,
-                "type": "multipleChoice",
-                "category": "HenryVIII",
-                "question": "You're married to Jane Seymor, she gives you what you've always wanted. What is this?",
-                "options": [
-                    "A jousting trophy",
-                    "2 sons",
-                    "A son",
-                    "A daughter and a son"
-                ],
-                "answer": "A son"
-            },
-
-            {
-            "id": 6,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "What is the correct order of your wives' cause of death?",
-            "options": [
-                "Divorced, beheaded survived, divorced, beheaded, died",
-                "Beheaded, divorced, died, beheaded, divorced, died",
-                "Beheaded, divorced, died, beheaded, divorced, survived",
-                "Divorced, beheaded, died, divorced, beheaded, survived"
-            ],
-            "answer": "Divorced, beheaded, died, divorced, beheaded, survived"
-            },
-
-        {
-            "id": 7,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "What happened when you first met Anne of Cleves?",
-            "options": [
-                "You fell in love",
-                "You found out she had an affair",
-                "She didn't recognise you ",
-                "You beheaded her"
-            ],
-            "answer": "She didn't recognise you "
-            },
-
-        {
-            "id": 8,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "Catherine Howard was related to one of your previous wives, who was she related to?",
-            "options": [
-                "Catherine of Aragon",
-                "Anne Boleyn",
-                "Catherine Parr",
-                "Anne of Cleves"
-            ],
-            "answer": "Anne Boleyn"
-            },
-
-        {
-            "id": 9,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "What happened when you married Catherine Parr?",
-            "options": [
-                "You died in a jousting competition in January 1547",
-                "You died from an infected wound in January 1547",
-                "She ran away",
-                "You died in January 1548"
-            ],
-            "answer": "You died from an infected wound in January 1547"
-            },
-
-        {
-            "id": 10,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "Who did you wish to be buried beside?",
-            "options": [
-                "Catherine of Aragon",
-                "Catherine Howard",
-                "Anne of Cleves",
-                "Jane Seymor"
-            ],
-            "answer": "Jane Seymor"
-            },
-
-        { 
-            "id": 11,
-            "type": "multipleChoice",
-            "category": "HenryVIII",
-            "question": "Who were your children?",
-            "options": [
-                "Edward VI, Mary I, Elizabeth I",
-                "Elizabeth I, Edward VI",
-                "Mary I, Edward VII, Elizabeth I",
-                "Mary I, Edward VII, Elizabeth I, Charles II"
-            ],
-            "answer": "Edward VI, Mary I, Elizabeth I"
-            },
+                "answer": "Great Heathen Army"
+            }
+            
+        ],
+        "LeifEriksonQuestions": [
             {
                 "id": 1,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "Who was head of the English Church before the Reformation?",
+                "type": "multiplechoice",
+                "category": "History-Vikings",
+                "question": "Who was Leif Erikson's famous father?",
                 "options": [
-                    "You (The Pope)",
-                    "Henry VIII",
-                    "Archbishop of York",
-                    "Archbishop of Canterbury"
+                    "Harald Bluetooth",
+                    "Olaf Tryggvason",
+                    "Erik the Red",
+                    "Bjorn Ironside"
                 ],
-                "answer": "You (The Pope)"
-            },
+                "answer": "Erik the Red"
+                        },
+                        {
+                            "id": 2,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "What is the modern-day name of the region Leif likely explored?",
+                            "options": [
+                                "Newfoundland",
+                                "Alaska",
+                                "Nova Scotia",
+                                "Maine"
+                            ],
+                            "answer": "Newfoundland"
+                        },
+                        {
+                            "id": 3,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "Which among the following was NOT one of the names Leif gave to the newly discovered places?",
+                            "options": [
+                                "Markland",
+                                "Vinland",
+                                "Stonehaven",
+                                "Helluland"
+                            ],
+                            "answer": "Stonehaven"
+                        },
+                        {
+                            "id": 4,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "Apart from being an explorer, what was Leif's significant mission when he returned to Greenland?",
+                            "options": [
+                                "To establish trade with Europe",
+                                "To convert the Norse to Christianity",
+                                "To claim lands for the Norwegian king",
+                                "To find a passage to Asia"
+                            ],
+                            "answer": "To convert the Norse to Christianity"
+                        },
+                        {
+                            "id": 5,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "What is the modern-day country where Leif Erikson's settlements were likely located?",
+                            "options": [
+                                "Canada",
+                                "USA",
+                                "Iceland",
+                                "Denmark"
+                            ],
+                            "answer": "Canada"
+                        },
+                        {
+                            "id": 6,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "On his travels, Leif once found a man adrift at sea and rescued him. What precious object did this man possess?",
+                            "options": [
+                                "A golden compass",
+                                "A map of unknown lands",
+                                "A rune-carved sword",
+                                "A wooden figurehead"
+                            ],
+                            "answer": "A wooden figurehead"
+                        },
+                        {
+                            "id": 7,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "When the Norse settlers encountered indigenous people, by what name did the sagas refer to these native inhabitants?",
+                            "options": [
+                                "Inuits",
+                                "Skrælings",
+                                "Wendigos",
+                                "Algonquins"
+                            ],
+                            "answer": "Skrælings"
+                        },
+                        {
+                            "id": 8,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "Which other member of Leif's family attempted to establish a more permanent settlement in the lands Leif explored?",
+                            "options": [
+                                "His sister, Freydis",
+                                "His brother, Thorvald",
+                                "His son, Erik",
+                                "His cousin, Olaf"
+                            ],
+                            "answer": "His brother, Thorvald"
+                        },
+                        {
+                            "id": 9,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "Although Leif Erikson made incredible voyages, who is often more credited with 'discovering' America?",
+                            "options": [
+                                "Magellan",
+                                "Vasco da Gama",
+                                "Christopher Columbus",
+                                "Marco Polo"
+                            ],
+                            "answer": "Christopher Columbus"
+                        },
+                        {
+                            "id": 10,
+                            "type": "multiplechoice",
+                            "category": "History-Vikings",
+                            "question": "When is Leif Erikson Day celebrated in the United States?",
+                            "options": [
+                                "July 4th",
+                                "August 20th",
+                                "October 9th",
+                                "December 1st"
+                            ],
+                            "answer": "October 9th"
+                        }
+                          
+                    ]
+    },
+                "tudorQuestions": {
+                    "HenryVIIIQuestions": [
+                        {
+                                "id": 1,
+                                "type": "multipleChoice",
+                                "category": "History-Tudor",
+                                "question": "You are Henry VIII, how many wives did you have during your lifetime?",
+                                "options": [
+                                    "4",
+                                    "7",
+                                    "6",
+                                    "8"
+                                ],
+                                "answer": "6"
+                            },
+                        
+                            {
+                                "id": 2,
+                                "type": "multipleChoice",
+                                "category": "History-Tudor",
+                                "question": "What is the correct order of your wives?",
+                                "options": [
+                                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Parr, Catherine Howard",
+                                    "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr",
+                                    "Catherine of Aragon, Anne of Cleves, Anne Boleyn, Jane Seymour, Catherine Parr, Catherine Howard",
+                                    "Catherine Howard, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine of Aragon, Catherine Parr"
+                                ],
+                                "answer": "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr"
+                            },
+                            {
+                                "id": 3,
+                                "type": "multipleChoice",
+                                "category": "History-Tudor",
+                                "question": "You are married to Catherine of Aragon, and want to leave her, what do you do?",
+                                "options": [
+                                    "Have the Catholic Church allow you to divorce her",
+                                    "Behead her",
+                                    "Have the Protestant Church allow you to divorce her",
+                                    "Create the Church of England to divorce her"
+                                ],
+                                "answer": "Create the Church of England to divorce her"
+                            },
+                            {
+                                "id": 4,
+                                "type": "multipleChoice",
+                                "category": "History-Tudor",
+                                "question": "You are married to Anne Boleyn and have found out she just cheated on you, what do you do?",
+                                "options": [
+                                    "You have her child",
+                                    "Divorce her",
+                                    "Behead her",
+                                    "Exile her"
+                                ],
+                                "answer": "Behead her"
+                            },
+                            {
+                                "id": 5,
+                                "type": "multipleChoice",
+                                "category": "History-Tudor",
+                                "question": "You're married to Jane Seymor, she gives you what you've always wanted. What is this?",
+                                "options": [
+                                    "A jousting trophy",
+                                    "2 sons",
+                                    "A son",
+                                    "A daughter and a son"
+                                ],
+                                "answer": "A son"
+                            },
+                            {
+                            "id": 6,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "What is the correct order of your wives' cause of death?",
+                            "options": [
+                                "Divorced, beheaded survived, divorced, beheaded, died",
+                                "Beheaded, divorced, died, beheaded, divorced, died",
+                                "Beheaded, divorced, died, beheaded, divorced, survived",
+                                "Divorced, beheaded, died, divorced, beheaded, survived"
+                            ],
+                            "answer": "Divorced, beheaded, died, divorced, beheaded, survived"
+                            },
+                            {
+                            "id": 7,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "What happened when you first met Anne of Cleves?",
+                            "options": [
+                                "You fell in love",
+                                "You found out she had an affair",
+                                "She didn't recognise you ",
+                                "You beheaded her"
+                            ],
+                            "answer": "She didn't recognise you "
+                            },
+                            {
+                            "id": 8,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Catherine Howard was related to one of your previous wives, who was she related to?",
+                            "options": [
+                                "Catherine of Aragon",
+                                "Anne Boleyn",
+                                "Catherine Parr",
+                                "Anne of Cleves"
+                            ],
+                            "answer": "Anne Boleyn"
+                            },
+                            {
+                            "id": 9,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "What happened when you married Catherine Parr?",
+                            "options": [
+                                "You died in a jousting competition in January 1547",
+                                "You died from an infected wound in January 1547",
+                                "She ran away",
+                                "You died in January 1548"
+                            ],
+                            "answer": "You died from an infected wound in January 1547"
+                            },
+                            {
+                            "id": 10,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Who did you wish to be buried beside?",
+                            "options": [
+                                "Catherine of Aragon",
+                                "Catherine Howard",
+                                "Anne of Cleves",
+                                "Jane Seymor"
+                            ],
+                            "answer": "Jane Seymor"
+                            },
+                            { 
+                            "id": 11,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Who were your children?",
+                            "options": [
+                                "Edward VI, Mary I, Elizabeth I",
+                                "Elizabeth I, Edward VI",
+                                "Mary I, Edward VII, Elizabeth I",
+                                "Mary I, Edward VII, Elizabeth I, Charles II"
+                            ],
+                            "answer": "Edward VI, Mary I, Elizabeth I"
+                            }
+                    ],
 
-            {
-                "id": 2,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "Henry VIII has asked for an annulment. Who does he wish to annul with?",
-                "options": [
-                    "Catherine Howard",
-                    "Cather Parr",
-                    "Catherine of Aragon",
-                    "Anne Bolyen"
-                ],
-                "answer": "Catherine of Aragon"
-            },
-            {
-                "id": 3,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "Who did you send over to hear about Henry's wish to annul?",
-                "options": [
-                    "Pope Clement VI",
-                    "Cardinal Wolsey",
-                    "Charles V",
-                    "Cardinal Campeggio"
-                ],
-                "answer": "Cardinal Campeggio"
-            },
+                    "PopeQuestions": [
+                        {
+                            "id": 1,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Who was head of the English Church before the Reformation?",
+                            "options": [
+                                "You (The Pope)",
+                                "Henry VIII",
+                                "Archbishop of York",
+                                "Archbishop of Canterbury"
+                            ],
+                            "answer": "You (The Pope)"
+                        },
+                    
+                        {
+                            "id": 2,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Henry VIII has asked for an annulment. Who does he wish to annul with?",
+                            "options": [
+                                "Catherine Howard",
+                                "Cather Parr",
+                                "Catherine of Aragon",
+                                "Anne Boleyn"
+                            ],
+                            "answer": "Catherine of Aragon"
+                        },
+                        {
+                            "id": 3,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Who did you send over to hear about Henry's wish to annul?",
+                            "options": [
+                                "Pope Clement VI",
+                                "Cardinal Wolsey",
+                                "Charles V",
+                                "Cardinal Campeggio"
+                            ],
+                            "answer": "Cardinal Campeggio"
+                        },
+                    
+                        {
+                            "id": 4,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "What reasons did you not approve of the annulment? (select all that apply)?",
+                            "options": [
+                                "Catherine had a powerful Catholic family who would have dissaproved",
+                                "You would have to go against the exemption of the previous Pope which allowed Henry and Catherine to marry",
+                                "Henry’s argument for having sinned by marrying his brother’s widow was in fact false. He did what was right at the time.",
+                                "All of the above"
+                            ],
+                            "answer": "All of the above"
+                        },
+                        {
+                            "id": 5,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Who essentially held you prisoner?",
+                            "options": [
+                                "Pope Clement VI",
+                                "Catherine of Aragon’s cousin, Charles V",
+                                "Anne of Cleves’s father, John III",
+                                "Catherine of Aragon’s brother, Prince of Asturias"
+                            ],
+                            "answer": "Catherine of Aragon’s cousin, Charles V"
+                        },
+                    
+                        {
+                        "id": 6,
+                        "type": "multipleChoice",
+                        "category": "History-Tudor",
+                        "question": "In what year did Henry VIII create the Church of England?",
+                        "options": [
+                            "1534",
+                            "1543",
+                            "1634",
+                            "1643"
+                        ],
+                        "answer": "1534"
+                        },
+                    
+                    {
+                        "id": 7,
+                        "type": "multipleChoice",
+                        "category": "History-Tudor",
+                        "question": "What religion did the Church of England follow?",
+                        "options": [
+                            "Englandism",
+                            "Protestantism",
+                            "Buddhism",
+                            "Catholicism"
+                        ],
+                        "answer": "Protestantism"
+                        },
+                    
+                    {
+                        "id": 8,
+                        "type": "multipleChoice",
+                        "category": "History-Tudor",
+                        "question": "Who supported Henry VIII to carry out the Dissolution of the Monasteries?",
+                        "options": [
+                            "Thomas Cranmer",
+                            "Sir Thomas More",
+                            "Thomas Cromwell",
+                            "Thomas Wolsey"
+                        ],
+                        "answer": "Thomas Cromwell"
+                        },
+                    
+                    {
+                        "id": 9,
+                        "type": "multipleChoice",
+                        "category": "History-Tudor",
+                        "question": "Who in Henry’s inner circle disapproved of the Church of England?",
+                        "options": [
+                            "Sir Thomas More",
+                            "Elizabeth Barton",
+                            "Thomas Cranmer",
+                            "Thomas Wolsey"
+                        ],
+                        "answer": "Sir Thomas More"
+                        },
+                    
+                    {
+                        "id": 10,
+                        "type": "multipleChoice",
+                        "category": "History-Tudor",
+                        "question": "Which of Henry’s children was the most devout Protestant?",
+                        "options": [
+                            "Mary I",
+                            "Elizabeth I",
+                            "Edward VI",
+                            "Charles II"
+                        ],
+                        "answer": "Edward VI"
+                        },
+                        {
+                            "id": 11,
+                            "type": "multipleChoice",
+                            "category": "History-Tudor",
+                            "question": "Which of these Tudor monarchs restored the English Church to Catholisim?",
+                            "options": [
+                                "Elizabeth I",
+                                "Mary I",
+                                "Edward VI",
+                                "Henry VIIII"
+                            ],
+                            "answer": "Mary I"
+                        }
+                    ]
+                            
+                    },
 
-            {
-                "id": 4,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "What reasons did you not approve of the annulment? (select all that apply)?",
-                "options": [
-                    "Catherine had a powerful Catholic family who would have dissaproved",
-                    "You would have to go against the exemption of the previous Pope which allowed Henry and Catherine to marry",
-                    "Henry’s argument for having sinned by marrying his brother’s widow was in fact false. He did what was right at the time.",
-                    "All of the above"
-                ],
-                "answer": "All of the above"
-            },
-            {
-                "id": 5,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "Who essentially held you prisoner?",
-                "options": [
-                    "Pope Clement VI",
-                    "Catherine of Aragon’s cousin, Charles V",
-                    "Anne of Cleves’s father, John III",
-                    "Catherine of Aragon’s brother, Prince of Asturias"
-                ],
-                "answer": "Catherine of Aragon’s cousin, Charles V"
-            },
+                    "FranceQuestions": {
+                        "NapoleonQuestions":
+                        [
+                            {
+                                "id": 1,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Which battle was not fought by you?",
+                                "options": [
+                                "The Battle of Austerlitz",
+                                "The Battle of Waterloo",
+                                "The Battle of the Bulge",
+                                "The Battle of the Pyramids"
+                                ],
+                                "answer": "The Battle of the Bulge"
+                                },
+                                {
+                                "id": 2,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Where were you born?",
+                                "options": [
+                                "Elba",
+                                "Sicily",
+                                "Corsica",
+                                "St. Helena"
+                                ],
+                                "answer": "Corsica"
+                                },
+                                {
+                                "id": 3,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "You were defeated in which battle?",
+                                "options": [
+                                "The Battle of the Bulge",
+                                "The Battle of Thermopylae",
+                                "The Battle of Lepanto",
+                                "The Battle of Waterloo"
+                                ],
+                                "answer": "The Battle of Waterloo"
+                                },
+                                {
+                                "id": 4,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "On what island did Napoleon Bonaparte die?",
+                                "options": [
+                                "St. Helena",
+                                "Elba",
+                                "Sri Lanka",
+                                "Corsica"
+                                ],
+                                "answer": "St. Helena"
+                                },
+                                {
+                                "id": 5,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What was Napoleon’s nickname?",
+                                "options": [
+                                "Old Ironsides",
+                                "The Little Corporal",
+                                "Old Lughead",
+                                "The Little Emperor"
+                                ],
+                                "answer": "The Little Corporal"
+                                },
+                                {
+                                "id": 6,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "When did Napoleon become the emperor of France?",
+                                "options": [
+                                "1802",
+                                "1789",
+                                "1804",
+                                "1800"
+                                ],
+                                "answer": "1804"
+                                },
+                                {
+                                "id": 7,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Why didn't Napoleon attack England?",
+                                "options": [
+                                "They had an alliance with England.",
+                                "They had the biggest navy in the world.",
+                                "It was too far away.",
+                                "England was too big."
+                                ],
+                                "answer": "They had the biggest navy in the world."
+                                },
+                                {
+                                "id": 8,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What was Napoleon's most glorified battle?",
+                                "options": [
+                                "The Battle of Three Emperors",
+                                "The Russian Campaign",
+                                "The Battle of Waterloo",
+                                "The Spanish Campaign"
+                                ],
+                                "answer": "The Battle of Austerlitz"
+                                },
+                                {
+                                "id": 9,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What did Napoleon do to confirm his title as Ruler of France?",
+                                "options": [
+                                "Held a Referendum",
+                                "Nothing",
+                                "Started a battle",
+                                "Gave a speech"
+                                ],
+                                "answer": "Held a Referendum"
+                                },
+                                {
+                                "id": 10,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "After the fall of Napoleon, what was the name of the meeting place where the alliance of the government divided the empire?",
+                                "options": [
+                                "The Congress of France",
+                                "The Congress of Vienna",
+                                "The Congress of Alba",
+                                "The Congress of Sicily"
+                                ],
+                                "answer": "The Congress of Vienna"
+                                }
+                            
+                            ],
 
-            {
-            "id": 6,
-            "type": "multipleChoice",
-            "category": "Pope",
-            "question": "In what year did Henry VIII create the Church of England?",
-            "options": [
-                "1534",
-                "1543",
-                "1634",
-                "1643"
-            ],
-            "answer": "1534"
-            },
+                
+                       "JoanaofArcQuestions": [
+                            {
+                                "id": 1,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "At what age did Joan of Arc start to have visions?",
+                                "options": [
+                                "Aged 12",
+                                "Aged 7",
+                                "Aged 21",
+                                "Aged 16",
+                                "None of the above"
+                                ],
+                                "answer": "Aged 12"
+                                },
+                                {
+                                "id": 2,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What did Joan of Arc do as a child?",
+                                "options": [
+                                "Went to school and learnt how to read and write.",
+                                "Went to church every single day with her family.",
+                                "Stayed home and did nothing.",
+                                "Took care of the animals on her parents' farm and was an excellent seamstress."
+                                ],
+                                "answer": "Took care of the animals on her parents' farm and was an excellent seamstress."
+                                },
+                                {
+                                "id": 3,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What year did Joan of Arc become a saint?",
+                                "options": [
+                                "2010",
+                                "1920",
+                                "1453",
+                                "1956"
+                                ],
+                                "answer": "1920"
+                                },
+                                {
+                                "id": 4,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Why did the English men dislike Joan of Arc?",
+                                "options": [
+                                "They found her boring.",
+                                "They were intimidated by her because she was an excellent fighter.",
+                                "She didn't play fair and made the soldiers go easy on her.",
+                                "She wasn't a true leader in their eyes."
+                                ],
+                                "answer": "She wasn't a true leader in their eyes."
+                                },
+                                {
+                                "id": 5,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "How is Joan of Arc similar to Ellie from Tomorrow When the War Began?",
+                                "options": [
+                                "They were both brought up on a farm. This naturally gave them skills and strengths that helped them in war.",
+                                "They were both leaders of a group and brought them to victory.",
+                                "They are both young leaders, at the age of 16.",
+                                "All of the above"
+                                ],
+                                "answer": "All of the above"
+                                },
+                                {
+                                "id": 6,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What is Joan known for?",
+                                "options": [
+                                "Joan is known for dressing up as a man at war, so the men didn't mistreat her.",
+                                "Joan is known for saving her country from being taken over by the English, that had been going on for nearly a hundred years and they had no chance of winning.",
+                                "Joan is known for being one of the youngest military leaders ever.",
+                                "All of the above"
+                                ],
+                                "answer": "All of the above"
+                                },
+                                {
+                                "id": 7,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What did Joan's visions from Michael the archangel tell her to do?",
+                                "options": [
+                                "To leave her family and go get an education.",
+                                "To kill two of the animals on her farm and feed it to the poor.",
+                                "To bring the French to victory against the English.",
+                                "To join the English troops and lead them to victory against the French."
+                                ],
+                                "answer": "To bring the French to victory against the English."
+                                },
+                                {
+                                "id": 8,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "What did Joan teach us about leadership?",
+                                "options": [
+                                "That the key is to blackmail and manipulate.",
+                                "To not listen to others.",
+                                "Put others before yourself, be persuasive, be determined",
+                                "None of the above"
+                                ],
+                                "answer": "Put others before yourself, be persuasive, be determined"
+                                },
+                                {
+                                "id": 9,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Is Joan of Arc's nickname 'The Maid of Orleans'?",
+                                "options": [
+                                "True",
+                                "False"
+                                ],
+                                "answer": "True"
+                                },
+                                {
+                                "id": 10,
+                                "type": "multiplechoice",
+                                "category": "History-France",
+                                "question": "Joan of Arc at the age of eighteen was captured, sold to the English, didn't find her guilty except that she dressed as a man, which was enough for her to be worthy of death and this resulted in her being burnt alive.",
+                                "options": [
+                                "True",
+                                "False"
+                                ],
+                                "answer": "True"
+                                }
+                                          
+                        ]
+                    }    ,
+                    "RomanQuestions": {
+                        "JuliusCaeser":
+                        [
+                            {
+                                "id": 1,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "Julius Caesar had what kind of family background?",
+                                "options": [
+                                "Middle Class",
+                                "Lower Class",
+                                "Aristocratic",
+                                "Plebeian Class"
+                                ],
+                                "answer": "Aristocratic"
+                                },
+                                {
+                                "id": 2,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "You married your wife Cornelia in 84 B.C.E., and a few years later you were asked to do what?",
+                                "options": [
+                                "Have children",
+                                "Divorce her",
+                                "Marry Cleopatra",
+                                "Marry someone else"
+                                ],
+                                "answer": "Divorce her"
+                                },
+                                {
+                                "id": 3,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "Your elected career started in 72 B.C.E., when you were elected what?",
+                                "options": [
+                                "Emperor",
+                                "Senator",
+                                "Military Tribune",
+                                "Consul"
+                                ],
+                                "answer": "Military Tribune"
+                                },
+                                {
+                                "id": 4,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "After Cornelia died in 69 B.C.E., you married a relative of what famous Roman?",
+                                "options": [
+                                "Jupiter",
+                                "Pompey",
+                                "Romulus",
+                                "Cicero"
+                                ],
+                                "answer": "Pompey"
+                                },
+                                {
+                                "id": 5,
+                                "type": "multiplechoice",
+                                "category": "JuliusCaesar",
+                                "question": "How many times did you marry?",
+                                "options": [
+                                "1",
+                                "2",
+                                "3",
+                                "4"
+                                ],
+                                "answer": "3"
+                                },
+                                {
+                                "id": 6,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "Where was your first big takeover?",
+                                "options": [
+                                "Egypt",
+                                "Britain",
+                                "Gaul",
+                                "Greenland"
+                                ],
+                                "answer": "Gaul"
+                                },
+                                {
+                                "id": 7,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "Your most famous quote 'Veni, vidi, vici' ('I came, I saw, I conquered') was said on August 1st 47 BC following which battle?",
+                                "options": [
+                                "The battle of Pharsalus (ending the Civil War against the Republicans)",
+                                "The defeat of Ptolemy in Alexandria",
+                                "The siege of Alesia",
+                                "The defeat of Pharnaces at Zela"
+                                ],
+                                "answer": "The defeat of Pharnaces at Zela"
+                                },
+                                {
+                                "id": 8,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "Who was your principal enemy in the Civil War?",
+                                "options": [
+                                "Marcus Brutus",
+                                "Cato the Younger",
+                                "Pompey the Great",
+                                "Cornelius Sulla"
+                                ],
+                                "answer": "Pompey the Great"
+                                },
+                                {
+                                "id": 9,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "While being dictator of Rome, you were offered a crown by Marc Antony according to the historian Plutarch, to declare him King of Rome. But you refused. What is a possible reason you refused?",
+                                "options": [
+                                "A dictator had more power than a king.",
+                                "He desired to be king of the whole empire.",
+                                "Marc Antony was his enemy, so this act was suspicious.",
+                                "It was a theater for the people."
+                                ],
+                                "answer": "It was a theater for the people."
+                                },
+                                {
+                                "id": 10,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "You were assassinated on the Ides of March 44 BCE at a meeting of the Roman senate, by who?",
+                                "options": [
+                                "Cleopatra and Brutus",
+                                "Brutus",
+                                "Brutus and a group of political opponents",
+                                "Cleopatra and a group of political opponents"
+                                ],
+                                "answer": "Brutus and a group of political opponents"
+                                }
+                            
+                            
+                        ],
+                        
+                        "AugustusEmperor": [
+                            {
+                                "id": 1,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "You, Emperor Augustus also known as Octavian, a youth of 19 years, was the heir of Julius Caesar, who bequeathed him a fortune. Mark Antony withheld the money to thwart your efforts to build a political base. How did you execute the financial features of Caesar's will?",
+                                "options": [
+                                "You raided the public treasury.",
+                                "You went on a military campaign for war spoils.",
+                                "Another relative willed more money to you.",
+                                "You borrowed the money to execute Caesar's will."
+                                ],
+                                "answer": "You borrowed the money to execute Caesar's will."
+                                },
+                                {
+                                "id": 2,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "When you defeated Antony and Cleopatra, what plans did you have for Cleopatra?",
+                                "options": [
+                                "You considered appointing her governor of Egypt.",
+                                "You planned to exile her to the Egyptian wilderness.",
+                                "You intended to execute her in Alexandria.",
+                                "You wanted to lead her into Rome in chains behind his chariot."
+                                ],
+                                "answer": "You intended to execute her in Alexandria."
+                                },
+                                {
+                                "id": 3,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "What happened to the Roman economy when you returned to Rome with Egyptian wealth?",
+                                "options": [
+                                "There was panic in Rome and banks closed.",
+                                "Romans began collecting coins.",
+                                "Piracy increased on the seas.",
+                                "Interest rates fell and money came out of hiding."
+                                ],
+                                "answer": "Interest rates fell and money came out of hiding."
+                                },
+                                {
+                                "id": 4,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "What power granted to you by the Senate gave you authority outside of Italy?",
+                                "options": [
+                                "Proconsular",
+                                "Pontifex Maximus",
+                                "Tribunician",
+                                "Praetor"
+                                ],
+                                "answer": "Tribunician"
+                                },
+                                {
+                                "id": 5,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "You returned to Rome from Egypt with many legions under your control, including those which defected from Mark Antony. What did you do with regard to this huge army?",
+                                "options": [
+                                "You camped all of them outside of Rome.",
+                                "You disbanded many legions and settled their veterans in colonies.",
+                                "You gave control of them totally to the Senate.",
+                                "You left a large force in Egypt."
+                                ],
+                                "answer": "You disbanded many legions and settled their veterans in colonies."
+                                },
+                                {
+                                "id": 6,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "With which wife did you have one natural child?",
+                                "options": [
+                                "Scribonia",
+                                "Julia, daughter of Caesar",
+                                "Livia",
+                                "Clodia Pulchra"
+                                ],
+                                "answer": "Julia, daughter of Caesar"
+                                },
+                                {
+                                "id": 7,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "When you returned victorious to Rome after defeating Antony and Cleopatra, approximately how many legions were under your command?",
+                                "options": [
+                                "20 or 21",
+                                "25",
+                                "40 or more",
+                                "30"
+                                ],
+                                "answer": "40 or more"
+                                },
+                                {
+                                "id": 8,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "The Ludi Saeculares (Secular Games) were revived by you in what year?",
+                                "options": [
+                                "2 AD",
+                                "17 BC",
+                                "20 BC",
+                                "23 BC"
+                                ],
+                                "answer": "17 BC"
+                                },
+                                {
+                                "id": 9,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "There was objection to Marcus Vipsanius Agrippa marrying Julia, your daughter. Why was this?",
+                                "options": [
+                                "He was not of noble birth.",
+                                "He was an alcoholic.",
+                                "He had been a previous enemy of yours.",
+                                "He grew up with Mark Antony."
+                                ],
+                                "answer": "He had been a previous enemy of yours."
+                                },
+                                {
+                                "id": 10,
+                                "type": "multiplechoice",
+                                "category": "History-Romans",
+                                "question": "You fell ill while away from Rome and died. Where did you pass away?",
+                                "options": [
+                                "Nola",
+                                "Ostia",
+                                "Capri",
+                                "Beneventum"
+                                ],
+                                "answer": "Nola"
+                            }
+                                          
+                        ]
+                    },
+                    "EgyptQuestions": {
+                        "Tutankhamun":[{
+                            "id": 1,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "In which year is Tutankhamun thought to have been born?",
+                            "options": [
+                            "2117 BC",
+                            "1341 BC",
+                            "991 BC",
+                            "3346 BC"
+                            ],
+                            "answer": "1341 BC"
+                            },
+                            {
+                            "id": 2,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "During which period of Egyptian history did Tutankhamun live?",
+                            "options": [
+                            "Middle Kingdom",
+                            "Old Kingdom",
+                            "New Kingdom",
+                            "First Intermediate Period"
+                            ],
+                            "answer": "New Kingdom"
+                            },
+                            {
+                            "id": 3,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "What informal name is given to the figure identified as Tutankhamun's mother?",
+                            "options": [
+                            "The Lady with the Lamp",
+                            "The Lady of the Lake",
+                            "The Older Lady",
+                            "The Younger Lady"
+                            ],
+                            "answer": "The Younger Lady"
+                            },
+                            {
+                            "id": 4,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "What name is given to the pharaoh, believed to be Tutankhamun's father, who revolutionized Egypt's traditional religious system?",
+                            "options": [
+                            "Akhenaten",
+                            "Ahmose I",
+                            "Thutmose IV",
+                            "Amenhotep II"
+                            ],
+                            "answer": "Akhenaten"
+                            },
+                            {
+                            "id": 5,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "To which site did Akhenaten move Egypt's capital in 1343 BC?",
+                            "options": [
+                            "Alexandria",
+                            "Memphis",
+                            "Giza",
+                            "Amarna"
+                            ],
+                            "answer": "Amarna"
+                            },
+                            {
+                            "id": 6,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Which British aristocrat was the financial backer of the successful search for Tutankhamun's tomb?",
+                            "options": [
+                            "Lord Harlech",
+                            "Lord Carnarvon",
+                            "Lord Cardigan",
+                            "Lord Crawley"
+                            ],
+                            "answer": "Lord Carnarvon"
+                            },
+                            {
+                            "id": 7,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Although we now know him as Tutankhamun, this was not his original name. What was it?",
+                            "options": [
+                            "Akhanamun",
+                            "Tutankhoren",
+                            "Nebkhamun",
+                            "Tutankhaten"
+                            ],
+                            "answer": "Tutankhaten"
+                            },
+                            {
+                            "id": 8,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "The discovery of Tutankhamun’s tomb is one of the 20th century’s most famous events. But what claim to fame does the tomb itself have within the Valley of the Kings?",
+                            "options": [
+                            "It’s the most ornate tomb in the Valley of the Kings",
+                            "More archaeologists have died inside it than any other tomb",
+                            "It’s the smallest tomb in the Valley of the Kings",
+                            "It’s carved with more spells and curses than any other pharaoh’s tomb"
+                            ],
+                            "answer": "It’s the smallest tomb in the Valley of the Kings"
+                            },
+                            {
+                            "id": 9,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Where was Tutankhamun buried?",
+                            "options": [
+                            "In the Giza Necropolis",
+                            "In the Temple of Abu Simbel",
+                            "In the Valley of Kings",
+                            "In the Temple of Luxor"
+                            ],
+                            "answer": "In the Valley of Kings"
+                            },
+                            {
+                            "id": 10,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Who succeeded him as Pharaoh after his death?",
+                            "options": [
+                            "Smenkhkare",
+                            "Horemheb",
+                            "Ay",
+                            "Akhesenamun"
+                            ],
+                            "answer": "Horemheb"
+                            }
 
-        {
-            "id": 7,
-            "type": "multipleChoice",
-            "category": "Pope",
-            "question": "What religion did the Church of England follow?",
-            "options": [
-                "Englandism",
-                "Protestantism",
-                "Buddhism",
-                "Catholicism"
-            ],
-            "answer": "Protestantism"
-            },
+                        ],
+                    "Cleopatra":[{
+                        "id": 1,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "In what year was Cleopatra born?",
+                    "options": [
+                    "69 BC",
+                    "30 BC",
+                    "69 AD",
+                    "30 AD"
+                    ],
+                    "answer": "69 BC"
+                    },
+                    {
+                    "id": 2,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "How many brothers and how many sisters did Cleopatra have?",
+                    "options": [
+                    "five brothers and one sister",
+                    "one brother and nine sisters",
+                    "two sisters and two brothers",
+                    "two brothers and three sisters"
+                    ],
+                    "answer": "one brother and nine sisters"
+                    },
+                    {
+                    "id": 3,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "Berenice IV and Cleopatra VI, Cleopatra's older sisters, overthrew their father, Ptolemy XII, in order to rule by themselves. Cleopatra VI vanished strangely one day and not long after Ptolemy XII took back his throne with the aid of the Romans. What punishment did he give to Berenice IV?",
+                    "options": [
+                    "She was exiled to Nubia",
+                    "She was sent to live with a peasant family",
+                    "She was barred from the throne",
+                    "She was executed in front of her father"
+                    ],
+                    "answer": "She was executed in front of her father"
+                    },
+                    {
+                    "id": 4,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "Shortly after Cleopatra had ascended to the throne there was an attempted coup. Her co-ruler Ptolemy XIII and her younger sister Arsinoe raised the Egyptian Army against her in a plot to remove her from power. Which Roman general helped Cleopatra to win back her throne?",
+                    "options": [
+                    "Julius Caesar",
+                    "Pompey",
+                    "Marc Antony",
+                    "Crassus"
+                    ],
+                    "answer": "Julius Caesar"
+                    },
+                    {
+                    "id": 5,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "How many children did Queen Cleopatra VII have altogether by her two lovers Julius Caesar and Marc Antony?",
+                    "options": [
+                    "Two",
+                    "Four",
+                    "Three",
+                    "Five"
+                    ],
+                    "answer": "Three"
+                    },
+                    {
+                    "id": 6,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "What happened to Cleopatra's younger sister Arsinoe after she was caught when escaping from the Alexandrian War?",
+                    "options": [
+                    "She was exiled to Cyprus",
+                    "She was immediately executed",
+                    "She was taken back to Rome and led in a trail of conquest through the streets",
+                    "She was brought back for a last meeting with her sister Cleopatra and then executed by armed guards."
+                    ],
+                    "answer": "She was brought back for a last meeting with her sister Cleopatra and then executed by armed guards."
+                    },
+                    {
+                    "id": 7,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "After Caesar's death in 44 BC, the Roman Empire was split between Marc Antony and Octavian. Marc Antony and Cleopatra became very close while he was governing in the east. What did Octavian have to say about this?",
+                    "options": [
+                    "That Antony was one of the luckiest men in the world to be with the Egyptian Queen",
+                    "That Antony had brought new and useful information to Rome about Egypt",
+                    "That Antony no longer cared at all about Rome but only about the Egyptian Queen",
+                    "That Antony had disgraced the Egyptian Queen"
+                    ],
+                    "answer": "That Antony had disgraced the Egyptian Queen"
+                    },
+                    {
+                    "id": 8,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "In the 30s BC Octavian declared war on Marc Antony. Antony moved to the cove of Actium to prepare all his resources for battle. Many Roman soldiers at Actium with Antony disliked Cleopatra's presence. Why?",
+                    "options": [
+                    "They thought she would hinder their movements",
+                    "They thought she might try to seize command",
+                    "They feared she would distract Antony",
+                    "They felt a woman didn't belong on a battlefield"
+                    ],
+                    "answer": "They thought she might try to seize command"
+                    },
+                    {
+                    "id": 9,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "What happened at the Battle of Actium in 31 BC?",
+                    "options": [
+                    "Cleopatra defeated Octavian's forces",
+                    "Antony drowned, whereupon the Egyptian ships fled",
+                    "There was no clear winner",
+                    "Cleopatra and Antony's navy was almost completely obliterated and Cleopatra had to flee back to Egypt with Antony lagging behind"
+                    ],
+                    "answer": "Cleopatra and Antony's navy was almost completely obliterated and Cleopatra had to flee back to Egypt with Antony lagging behind"
+                    },
+                    {
+                    "id": 10,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "When the Roman army approached Alexandria, Cleopatra locked herself and her two female servants Charmian and Iras, into her mausoleum. Roman soldiers climbed in through a window and pulled Cleopatra out and she was then locked up in her room. She used the pretense of preparing Antony's body for the afterlife in her tomb to go back inside her tomb. What fate befell Queen Cleopatra?",
+                    "options": [
+                    "Roman soldiers yet again climbed in through an open window and pulled her back to Octavian",
+                    "Cleopatra, dressed in all her finery, killed herself using an asp",
+                    "She used a concoction of poison that she had prepared for such a time",
+                    "She prepared Antony for the afterlife and returned to Octavian for her journey back to Rome."
+                    ],
+                    "answer": "Cleopatra, dressed in all her finery, killed herself using an asp"
+                    }
 
-        {
-            "id": 8,
-            "type": "multipleChoice",
-            "category": "Pope",
-            "question": "Who supported Henry VIII to carry out the Dissolution of the Monasteries?",
-            "options": [
-                "Thomas Cranmer",
-                "Sir Thomas More",
-                "Thomas Cromwell",
-                "Thomas Wolsey"
-            ],
-            "answer": "Thomas Cromwell"
-            },
-
-        {
-            "id": 9,
-            "type": "multipleChoice",
-            "category": "Pope",
-            "question": "Who in Henry’s inner circle disapproved of the Church of England?",
-            "options": [
-                "Sir Thomas More",
-                "Elizabeth Barton",
-                "Thomas Cranmer",
-                "Thomas Wolsey"
-            ],
-            "answer": "Sir Thomas More"
-            },
-
-        {
-            "id": 10,
-            "type": "multipleChoice",
-            "category": "Pope",
-            "question": "Which of Henry’s children was the most devout Protestant?",
-            "options": [
-                "Mary I",
-                "Elizabeth I",
-                "Edward VI",
-                "Charles II"
-            ],
-            "answer": "Edward VI"
-            },
-            {
-                "id": 11,
-                "type": "multipleChoice",
-                "category": "Pope",
-                "question": "Which of these Tudor monarchs restored the English Church to Catholisim?",
-                "options": [
-                    "Elizabeth I",
-                    "Mary I",
-                    "Edward VI",
-                    "Henry VIIII"
-                ],
-                "answer": "Mary I"
-                }
-        ]
-
-}
+                    ]
+                    }         
+                    }
