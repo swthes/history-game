@@ -168,7 +168,7 @@
                         {
                                 "id": 1,
                                 "type": "multipleChoice",
-                                "category": "HenryVIII",
+                                "category": "History-Tudor",
                                 "question": "You are Henry VIII, how many wives did you have during your lifetime?",
                                 "options": [
                                     "4",
@@ -182,7 +182,7 @@
                             {
                                 "id": 2,
                                 "type": "multipleChoice",
-                                "category": "HenryVIII",
+                                "category": "History-Tudor",
                                 "question": "What is the correct order of your wives?",
                                 "options": [
                                     "Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Parr, Catherine Howard",
@@ -195,7 +195,7 @@
                             {
                                 "id": 3,
                                 "type": "multipleChoice",
-                                "category": "HenryVIII",
+                                "category": "History-Tudor",
                                 "question": "You are married to Catherine of Aragon, and want to leave her, what do you do?",
                                 "options": [
                                     "Have the Catholic Church allow you to divorce her",
@@ -208,7 +208,7 @@
                             {
                                 "id": 4,
                                 "type": "multipleChoice",
-                                "category": "HenryVIII",
+                                "category": "History-Tudor",
                                 "question": "You are married to Anne Boleyn and have found out she just cheated on you, what do you do?",
                                 "options": [
                                     "You have her child",
@@ -221,7 +221,7 @@
                             {
                                 "id": 5,
                                 "type": "multipleChoice",
-                                "category": "HenryVIII",
+                                "category": "History-Tudor",
                                 "question": "You're married to Jane Seymor, she gives you what you've always wanted. What is this?",
                                 "options": [
                                     "A jousting trophy",
@@ -234,7 +234,7 @@
                             {
                             "id": 6,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "What is the correct order of your wives' cause of death?",
                             "options": [
                                 "Divorced, beheaded survived, divorced, beheaded, died",
@@ -247,7 +247,7 @@
                             {
                             "id": 7,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "What happened when you first met Anne of Cleves?",
                             "options": [
                                 "You fell in love",
@@ -260,7 +260,7 @@
                             {
                             "id": 8,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "Catherine Howard was related to one of your previous wives, who was she related to?",
                             "options": [
                                 "Catherine of Aragon",
@@ -273,7 +273,7 @@
                             {
                             "id": 9,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "What happened when you married Catherine Parr?",
                             "options": [
                                 "You died in a jousting competition in January 1547",
@@ -286,7 +286,7 @@
                             {
                             "id": 10,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "Who did you wish to be buried beside?",
                             "options": [
                                 "Catherine of Aragon",
@@ -299,7 +299,7 @@
                             { 
                             "id": 11,
                             "type": "multipleChoice",
-                            "category": "HenryVIII",
+                            "category": "History-Tudor",
                             "question": "Who were your children?",
                             "options": [
                                 "Edward VI, Mary I, Elizabeth I",
@@ -315,7 +315,7 @@
                         {
                             "id": 1,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "Who was head of the English Church before the Reformation?",
                             "options": [
                                 "You (The Pope)",
@@ -329,7 +329,7 @@
                         {
                             "id": 2,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "Henry VIII has asked for an annulment. Who does he wish to annul with?",
                             "options": [
                                 "Catherine Howard",
@@ -342,7 +342,7 @@
                         {
                             "id": 3,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "Who did you send over to hear about Henry's wish to annul?",
                             "options": [
                                 "Pope Clement VI",
@@ -356,7 +356,7 @@
                         {
                             "id": 4,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "What reasons did you not approve of the annulment? (select all that apply)?",
                             "options": [
                                 "Catherine had a powerful Catholic family who would have dissaproved",
@@ -369,7 +369,7 @@
                         {
                             "id": 5,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "Who essentially held you prisoner?",
                             "options": [
                                 "Pope Clement VI",
@@ -383,7 +383,7 @@
                         {
                         "id": 6,
                         "type": "multipleChoice",
-                        "category": "Pope",
+                        "category": "History-Tudor",
                         "question": "In what year did Henry VIII create the Church of England?",
                         "options": [
                             "1534",
@@ -397,7 +397,7 @@
                     {
                         "id": 7,
                         "type": "multipleChoice",
-                        "category": "Pope",
+                        "category": "History-Tudor",
                         "question": "What religion did the Church of England follow?",
                         "options": [
                             "Englandism",
@@ -411,7 +411,7 @@
                     {
                         "id": 8,
                         "type": "multipleChoice",
-                        "category": "Pope",
+                        "category": "History-Tudor",
                         "question": "Who supported Henry VIII to carry out the Dissolution of the Monasteries?",
                         "options": [
                             "Thomas Cranmer",
@@ -425,7 +425,7 @@
                     {
                         "id": 9,
                         "type": "multipleChoice",
-                        "category": "Pope",
+                        "category": "History-Tudor",
                         "question": "Who in Henry’s inner circle disapproved of the Church of England?",
                         "options": [
                             "Sir Thomas More",
@@ -439,7 +439,7 @@
                     {
                         "id": 10,
                         "type": "multipleChoice",
-                        "category": "Pope",
+                        "category": "History-Tudor",
                         "question": "Which of Henry’s children was the most devout Protestant?",
                         "options": [
                             "Mary I",
@@ -452,7 +452,7 @@
                         {
                             "id": 11,
                             "type": "multipleChoice",
-                            "category": "Pope",
+                            "category": "History-Tudor",
                             "question": "Which of these Tudor monarchs restored the English Church to Catholisim?",
                             "options": [
                                 "Elizabeth I",
@@ -524,7 +524,7 @@
                                 {
                                 "id": 5,
                                 "type": "multiplechoice",
-                                "category": "Napoleon Bonaparte",
+                                "category": "History-France",
                                 "question": "What was Napoleon’s nickname?",
                                 "options": [
                                 "Old Ironsides",
@@ -1004,5 +1004,271 @@
                             }
                                           
                         ]
-                    }            
-            }
+                    },
+                    "EgyptQuestions": {
+                        "Tutankhamun":[{
+                            "id": 1,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "In which year is Tutankhamun thought to have been born?",
+                            "options": [
+                            "2117 BC",
+                            "1341 BC",
+                            "991 BC",
+                            "3346 BC"
+                            ],
+                            "answer": "1341 BC"
+                            },
+                            {
+                            "id": 2,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "During which period of Egyptian history did Tutankhamun live?",
+                            "options": [
+                            "Middle Kingdom",
+                            "Old Kingdom",
+                            "New Kingdom",
+                            "First Intermediate Period"
+                            ],
+                            "answer": "New Kingdom"
+                            },
+                            {
+                            "id": 3,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "What informal name is given to the figure identified as Tutankhamun's mother?",
+                            "options": [
+                            "The Lady with the Lamp",
+                            "The Lady of the Lake",
+                            "The Older Lady",
+                            "The Younger Lady"
+                            ],
+                            "answer": "The Younger Lady"
+                            },
+                            {
+                            "id": 4,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "What name is given to the pharaoh, believed to be Tutankhamun's father, who revolutionized Egypt's traditional religious system?",
+                            "options": [
+                            "Akhenaten",
+                            "Ahmose I",
+                            "Thutmose IV",
+                            "Amenhotep II"
+                            ],
+                            "answer": "Akhenaten"
+                            },
+                            {
+                            "id": 5,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "To which site did Akhenaten move Egypt's capital in 1343 BC?",
+                            "options": [
+                            "Alexandria",
+                            "Memphis",
+                            "Giza",
+                            "Amarna"
+                            ],
+                            "answer": "Amarna"
+                            },
+                            {
+                            "id": 6,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Which British aristocrat was the financial backer of the successful search for Tutankhamun's tomb?",
+                            "options": [
+                            "Lord Harlech",
+                            "Lord Carnarvon",
+                            "Lord Cardigan",
+                            "Lord Crawley"
+                            ],
+                            "answer": "Lord Carnarvon"
+                            },
+                            {
+                            "id": 7,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Although we now know him as Tutankhamun, this was not his original name. What was it?",
+                            "options": [
+                            "Akhanamun",
+                            "Tutankhoren",
+                            "Nebkhamun",
+                            "Tutankhaten"
+                            ],
+                            "answer": "Tutankhaten"
+                            },
+                            {
+                            "id": 8,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "The discovery of Tutankhamun’s tomb is one of the 20th century’s most famous events. But what claim to fame does the tomb itself have within the Valley of the Kings?",
+                            "options": [
+                            "It’s the most ornate tomb in the Valley of the Kings",
+                            "More archaeologists have died inside it than any other tomb",
+                            "It’s the smallest tomb in the Valley of the Kings",
+                            "It’s carved with more spells and curses than any other pharaoh’s tomb"
+                            ],
+                            "answer": "It’s the smallest tomb in the Valley of the Kings"
+                            },
+                            {
+                            "id": 9,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Where was Tutankhamun buried?",
+                            "options": [
+                            "In the Giza Necropolis",
+                            "In the Temple of Abu Simbel",
+                            "In the Valley of Kings",
+                            "In the Temple of Luxor"
+                            ],
+                            "answer": "In the Valley of Kings"
+                            },
+                            {
+                            "id": 10,
+                            "type": "multiplechoice",
+                            "category": "History-Egypt",
+                            "question": "Who succeeded him as Pharaoh after his death?",
+                            "options": [
+                            "Smenkhkare",
+                            "Horemheb",
+                            "Ay",
+                            "Akhesenamun"
+                            ],
+                            "answer": "Horemheb"
+                            }
+
+                        ],
+                    "Cleopatra":[{
+                        "id": 1,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "In what year was Cleopatra born?",
+                    "options": [
+                    "69 BC",
+                    "30 BC",
+                    "69 AD",
+                    "30 AD"
+                    ],
+                    "answer": "69 BC"
+                    },
+                    {
+                    "id": 2,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "How many brothers and how many sisters did Cleopatra have?",
+                    "options": [
+                    "five brothers and one sister",
+                    "one brother and nine sisters",
+                    "two sisters and two brothers",
+                    "two brothers and three sisters"
+                    ],
+                    "answer": "one brother and nine sisters"
+                    },
+                    {
+                    "id": 3,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "Berenice IV and Cleopatra VI, Cleopatra's older sisters, overthrew their father, Ptolemy XII, in order to rule by themselves. Cleopatra VI vanished strangely one day and not long after Ptolemy XII took back his throne with the aid of the Romans. What punishment did he give to Berenice IV?",
+                    "options": [
+                    "She was exiled to Nubia",
+                    "She was sent to live with a peasant family",
+                    "She was barred from the throne",
+                    "She was executed in front of her father"
+                    ],
+                    "answer": "She was executed in front of her father"
+                    },
+                    {
+                    "id": 4,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "Shortly after Cleopatra had ascended to the throne there was an attempted coup. Her co-ruler Ptolemy XIII and her younger sister Arsinoe raised the Egyptian Army against her in a plot to remove her from power. Which Roman general helped Cleopatra to win back her throne?",
+                    "options": [
+                    "Julius Caesar",
+                    "Pompey",
+                    "Marc Antony",
+                    "Crassus"
+                    ],
+                    "answer": "Julius Caesar"
+                    },
+                    {
+                    "id": 5,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "How many children did Queen Cleopatra VII have altogether by her two lovers Julius Caesar and Marc Antony?",
+                    "options": [
+                    "Two",
+                    "Four",
+                    "Three",
+                    "Five"
+                    ],
+                    "answer": "Three"
+                    },
+                    {
+                    "id": 6,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "What happened to Cleopatra's younger sister Arsinoe after she was caught when escaping from the Alexandrian War?",
+                    "options": [
+                    "She was exiled to Cyprus",
+                    "She was immediately executed",
+                    "She was taken back to Rome and led in a trail of conquest through the streets",
+                    "She was brought back for a last meeting with her sister Cleopatra and then executed by armed guards."
+                    ],
+                    "answer": "She was brought back for a last meeting with her sister Cleopatra and then executed by armed guards."
+                    },
+                    {
+                    "id": 7,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "After Caesar's death in 44 BC, the Roman Empire was split between Marc Antony and Octavian. Marc Antony and Cleopatra became very close while he was governing in the east. What did Octavian have to say about this?",
+                    "options": [
+                    "That Antony was one of the luckiest men in the world to be with the Egyptian Queen",
+                    "That Antony had brought new and useful information to Rome about Egypt",
+                    "That Antony no longer cared at all about Rome but only about the Egyptian Queen",
+                    "That Antony had disgraced the Egyptian Queen"
+                    ],
+                    "answer": "That Antony had disgraced the Egyptian Queen"
+                    },
+                    {
+                    "id": 8,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "In the 30s BC Octavian declared war on Marc Antony. Antony moved to the cove of Actium to prepare all his resources for battle. Many Roman soldiers at Actium with Antony disliked Cleopatra's presence. Why?",
+                    "options": [
+                    "They thought she would hinder their movements",
+                    "They thought she might try to seize command",
+                    "They feared she would distract Antony",
+                    "They felt a woman didn't belong on a battlefield"
+                    ],
+                    "answer": "They thought she might try to seize command"
+                    },
+                    {
+                    "id": 9,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "What happened at the Battle of Actium in 31 BC?",
+                    "options": [
+                    "Cleopatra defeated Octavian's forces",
+                    "Antony drowned, whereupon the Egyptian ships fled",
+                    "There was no clear winner",
+                    "Cleopatra and Antony's navy was almost completely obliterated and Cleopatra had to flee back to Egypt with Antony lagging behind"
+                    ],
+                    "answer": "Cleopatra and Antony's navy was almost completely obliterated and Cleopatra had to flee back to Egypt with Antony lagging behind"
+                    },
+                    {
+                    "id": 10,
+                    "type": "multiplechoice",
+                    "category": "History-Egypt",
+                    "question": "When the Roman army approached Alexandria, Cleopatra locked herself and her two female servants Charmian and Iras, into her mausoleum. Roman soldiers climbed in through a window and pulled Cleopatra out and she was then locked up in her room. She used the pretense of preparing Antony's body for the afterlife in her tomb to go back inside her tomb. What fate befell Queen Cleopatra?",
+                    "options": [
+                    "Roman soldiers yet again climbed in through an open window and pulled her back to Octavian",
+                    "Cleopatra, dressed in all her finery, killed herself using an asp",
+                    "She used a concoction of poison that she had prepared for such a time",
+                    "She prepared Antony for the afterlife and returned to Octavian for her journey back to Rome."
+                    ],
+                    "answer": "Cleopatra, dressed in all her finery, killed herself using an asp"
+                    }
+
+                    ]
+                    }         
+                    }
