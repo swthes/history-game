@@ -602,7 +602,7 @@ getcharacterQuestions(name){
         case 'Cleopatra':
             // Insert the Cleopatra image
             const cleopatraImg = document.createElement('img');
-            cleopatraImg.src = 'character-images/cleopatra.jpg';
+            cleopatraImg.src = 'character-images/celo.webp';
             cleopatraImg.alt = 'Cleopatra';
             characterImageContainer.appendChild(cleopatraImg);
 
