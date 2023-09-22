@@ -76,6 +76,8 @@ class Quiz {
                     }
                 } else {
                     this.lives--;
+                   
+                    // disable button after wrong choice
                     optionBtn.disabled = true;
                     this.updateLivesDisplay();
                     this.displayLifeMessages();
@@ -249,10 +251,10 @@ class Quiz {
     // retry quiz function sets the display to none for the modal and shows the quiz and restarts the quiz
     retryQuiz() {
         document.getElementById("out-of-lives-modal").style.display = "none";
-        this.clearProgress();
-        this.startQuiz(this.quizTypeSelected);
         this.currentQuestionIndex = 0;
         this.lives = 3;
+        this.clearProgress();
+        this.startQuiz(this.quizTypeSelected);
         this.updateLivesDisplay();
     }
 // modal home function sets the display to none for the modal and shows the start buttons via the back to home function
@@ -350,7 +352,8 @@ class Quiz {
             document.getElementById('character-romans').style.display= 'none';
             document.getElementById('character-egypt').style.display= 'none';
         } else if(type == 'egypt'){
-            document.getElementById('character-select').style.display = 'block';
+            document.getElementById("instructions").style.fontFamily = "Forum, cursive";
+            document.getElementById('character-select').style.display = "block";
             document.getElementById('character-egypt').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';
             document.getElementById('character-vikings').style.display= 'none';
@@ -496,8 +499,8 @@ getcharacterQuestions(name){
         case 'Napoleon':
             // Insert the Napoleon image
             const napoleonImg = document.createElement('img');
-            napoleonImg.src = 'character-images/napolean.jpg';
-            napoleonImg.alt = 'Napolean';
+            napoleonImg.src = 'character-images/napoleon.jpg';
+            napoleonImg.alt = 'Napoleon';
             characterImageContainer.appendChild(napoleonImg);
 
             console.log(name);
@@ -702,9 +705,11 @@ getcharacterQuestions(name){
             break;
         case "Tutankhamun":
             intro = "You are Tutankhamun, the young Pharaoh of Egypt. Your golden mask and tomb are symbols of ancient Egyptian glory. Answer accurately about your reign and life to unravel the mysteries of your time.";
+            intro = `<p id="instruction-Tutankhamun">${intro}</p>`
             break;
         case "Cleopatra":
             intro = "You are Cleopatra, the last active Pharaoh of Ptolemaic Egypt. Your allure and intelligence captivated even the greatest leaders of Rome. Address the questions about your life and legacy to reignite the legend.";
+            intro = `<p id="instruction-Cleopatra">${intro}</p>`
             break;
         default:
             intro = "Welcome, timekeeper.<br/>Your mission, should you choose to accept it, is to maintain the integrity of the time-space continuum by answering questions related to your role and era.";
