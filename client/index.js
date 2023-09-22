@@ -455,4 +455,4 @@ class Quiz {
 }
 // instance of quiz
 const quizGame = new Quiz();
-
+module.exports = Quiz;

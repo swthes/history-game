@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695312377308" clover="3.2.0">
-  <project timestamp="1695312377308" name="All files">
+<coverage generated="1695372303447" clover="3.2.0">
+  <project timestamp="1695372303447" name="All files">
     <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="6" elements="26" coveredelements="24" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="class.js" path="/Users/karina/Documents/La fosse/history-game/client/class.js">
       <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="6"/>
