@@ -42,3 +42,4 @@ class Questions {
 }
 
 
+module.exports = {shuffleArray, Questions};
