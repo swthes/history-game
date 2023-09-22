@@ -26,6 +26,109 @@
                     "Great Heathen Army"
                 ],
                 "answer": "Great Heathen Army"
+            },  {
+                "id": 3,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Halfdan's journey took him to the heart of England, where he and one of his brothers laid siege to a major city. Which brother stood by his side?",
+                "options": [
+                    "Sigurd Snake-in-the-Eye",
+                    "Bjorn Ironside",
+                    "Ivar the Boneless",
+                    "Ubbe"
+                ],
+                "answer": "Ivar the Boneless"
+            },
+            {
+                "id": 4,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "After many conquests, Halfdan's path led him to a significant seat of power. Which city did he rule?",
+                "options": [
+                    "Northumbria",
+                    "Wessex",
+                    "Dublin",
+                    "Mercia"
+                ],
+                "answer": "Dublin"
+            },
+            {
+                "id": 5,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "The Raven Banner: In battle, Halfdan and his brothers were often recognised by a particular standard, symbolising their lineage and might. What was it?",
+                "options": [
+                    "The Serpent's Sigil",
+                    "The Shield of Valhalla",
+                    "The Wolf's Emblem",
+                    "The Raven Banner"
+                ],
+                "answer": "The Raven Banner"
+            },
+            {
+                "id": 6,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Revenge Served Cold: Halfdan's thirst for vengeance was rooted in the belief that a particular English King was responsible for his father's death. Who was this King?",
+                "options": [
+                    "King Alfred of Wessex",
+                    "King Æthelwulf of Wessex",
+                    "King Ecgberht of Wessex",
+                    "King Aelle of Northumbria"
+                ],
+                "answer": "King Aelle of Northumbria"
+            },
+            {
+                "id": 7,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Halfdan's journey was not without challenges. At one pivotal battle, he faced the combined forces of Wessex and Mercia. Which battle was it?",
+                "options": [
+                    "Battle of Ashdown",
+                    "Battle of Stamford Bridge",
+                    "Battle of Maldon",
+                    "Battle of Reading"
+                ],
+                "answer": "Battle of Ashdown"
+            },
+            {
+                "id": 8,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Throughout his life, Halfdan held many titles, but there's one he never claimed. Which one?",
+                "options": [
+                    "King of Northumbria",
+                    "King of Dublin",
+                    "King of York",
+                    "King of Denmark"
+                ],
+                "answer": "King of Denmark"
+            },
+            {
+                "id": 9,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Halfdan's life was full of battles and conquests, but his demise is shrouded in mystery. How do some tales suggest he met his end?",
+                "options":[
+                    "Lost in a storm at sea",
+                    "Killed in a duel honour",
+                    "Assassinated in the alleys of Dublin",
+                    "Slain by a mythical beast"
+                ],
+                "answer": "Lost in a storm at sea"
+            },
+            {
+                "id": 10,
+                "type": "multipleChoice",
+                "category": "History-Vikings",
+                "question": "Despite the passing of time, Halfdan's legacy remains, echoed in tales and songs. What is he NOT remembered for? ",
+                "options": [
+                    "A son seeking vengeance",
+                    "A fearsome Viking Leader",
+                    "A bard of northern lands",
+                    "Ruler of Dublin"
+                ],
+                "answer": "A bard of northern lands"
             }
             
         ],
