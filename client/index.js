@@ -1,14 +1,27 @@
 const customAlert = document.getElementById("customAlert");
 const closeBtn = document.querySelector(".close");
+const con = document.getElementById("okay");
 
 // Function to show the custom alert
-function showCustomAlert( h1,message) {
+function showCustomAlert( h1,message, finishQuiz = false) {
     var h2Element = document.querySelector("#customAlert h2");
     var pElement = document.querySelector("#customAlert p");
     document.getElementById("quiz-section").style.display = "none";
+    customAlert.style.display = "block";
     h2Element.textContent = h1;
     pElement.innerHTML =  intro = `<p>${message}</p>`;
-    customAlert.style.display = "block";
+    if(finishQuiz){
+        document.getElementById("aHome").style.display = "inline-block";
+        document.getElementById("aRetry-quiz").style.display = "inline-block";
+        document.getElementById("okay").style.display="none";
+       
+       
+    }else{
+        document.getElementById("aHome").style.display = "none";
+        document.getElementById("aRetry-quiz").style.display = "none";
+        document.getElementById("okay").style.display="block";
+     
+   }
   
 }
 
@@ -21,6 +34,12 @@ function closeCustomAlert() {
 // Event listeners
 
 closeBtn.addEventListener("click", closeCustomAlert);
+window.addEventListener("click", (event) => {
+    if (event.target == customAlert) {
+        closeCustomAlert();
+    }
+});
+con.addEventListener("click", closeCustomAlert);
 window.addEventListener("click", (event) => {
     if (event.target == customAlert) {
         closeCustomAlert();
@@ -99,8 +118,9 @@ class Quiz {
                     this.currentQuestionIndex++;
                     if (this.currentQuestionIndex < this.quizData.length) {
                         this.displayQuestion(this.currentQuestionIndex);
+                        showCustomAlert( "Correct Answer", `You have answered correctly. <br/> You have ${(this.quizData.length - this.currentQuestionIndex)} questions remaining.`)
                     } else {
-                        this.finishQuiz();
+                        showCustomAlert( "Quiz finished!", "Quiz finished! You have answered all the questions correctly",true);
                     }
                 } else {
                     this.lives--;
@@ -143,7 +163,7 @@ class Quiz {
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if(this.lives == 2) {
-                showCustomAlert( "2 lives remaining","Twegen cyrses me yet standaþ/only got two more chances left" );
+                showCustomAlert( "2 lives remaining","Twegen cyrses me yet standaþ <br/> only got two more chances left" );
             }else{
                 showCustomAlert( "1 life remains", "Bid, smea on þa frignung, ac an lif þe yet standeþ <br/> time a to think about the question only got 1 life left")
                
@@ -152,10 +172,10 @@ class Quiz {
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if (this.lives == 2) {
-                showCustomAlert( "2 lives remaining","Vos avez seulement deux chances demourant.<br/>You only have two chances left." );
+                showCustomAlert( "2 lives remaining","Il ne vous reste que deux chances.<br/>You only have two chances left." );
               
             } else {
-                showCustomAlert( "1 life remains", "Prenez temps à penser à la question; vos avez une vie seule demourant.<br/>Take some time to think about the question; you only have one life left.");
+                showCustomAlert( "1 life remains", "Prenez le temps de réfléchir à la question ; il ne te reste qu'une vie..<br/>Take some time to think about the question; you only have one life left.");
               
             }
             
@@ -214,7 +234,8 @@ class Quiz {
 
     // Function to finish the quiz
     finishQuiz() {
-        alert("Quiz finished!");
+      
+       
 
         // Clear all progress-related data
         this.clearProgress();
@@ -254,10 +275,11 @@ class Quiz {
         document.getElementById('egypt-btn').addEventListener('click', () => this.getData('egypt'));
         document.getElementById('back-to-home').addEventListener('click', this.backToHome.bind(this));
         document.getElementById('back-to-homeQ').addEventListener('click', this.backToHome.bind(this));
-        
+        document.getElementById("aRetry-quiz").addEventListener("click", this.retryQuiz.bind(this));
         document.getElementById("retry-quiz").addEventListener("click", this.retryQuiz.bind(this));
         document.getElementById("modal-home").addEventListener("click", this.modalHome.bind(this));
         document.getElementById('back-home').addEventListener('click', this.backToHome.bind(this));
+        document.getElementById("aHome").addEventListener('click', this.backToHome.bind(this));
         document.getElementById("instructions").style.display = "none";
         // character event listener
         document.getElementById('Napoleon').addEventListener('click', () => this.getcharacterQuestions('Napoleon'))
@@ -276,8 +298,8 @@ class Quiz {
    // back to home function sets the display to none for the quiz and instructions and shows the start buttons
     backToHome() {
         this.clearProgress();
-    
-               
+        
+        document.getElementById('customAlert').style.display = 'none';   
         document.getElementById('character-select').style.display = 'none';
         document.getElementById("quiz-section").style.display = "none";
         document.getElementById("instructions").style.display = "none";
@@ -289,6 +311,7 @@ class Quiz {
     // retry quiz function sets the display to none for the modal and shows the quiz and restarts the quiz
     retryQuiz() {
         document.getElementById("out-of-lives-modal").style.display = "none";
+        document.getElementById('customAlert').style.display = 'none';   
         this.currentQuestionIndex = 0;
         this.lives = 3;
         this.clearProgress();
@@ -365,7 +388,7 @@ class Quiz {
             document.getElementById('character-egypt').style.display= 'none';
         }else if (type == 'roman') {
             document.getElementById("instructions").style.fontFamily = "Cinzel, serif";
-            document.getElementById("customAlert").style.fontFamily = "Cinzel, serif";s
+            document.getElementById("customAlert").style.fontFamily = "Cinzel, serif";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-romans').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';

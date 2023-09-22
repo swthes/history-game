@@ -179,3 +179,21 @@ button:hover {
     background-color: #f44336;
     color: white;
 } 
+#customAlert p{
+    color: rgb(7, 0, 0);
+    font-size: 20px;
+}
+#okay {
+    margin-left: auto;
+    margin-right: auto;
+}
+#aRetry-quiz{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: maroon;
+}
+#Home{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
