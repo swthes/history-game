@@ -332,7 +332,7 @@ class Quiz {
     }
     // gets the questions for the time period from api
     getData(type) {
-        fetch('https://history-server.onrender.com')
+        fetch('https://history-server.onrender.com/home')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
