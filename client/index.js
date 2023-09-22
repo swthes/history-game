@@ -1,3 +1,31 @@
+const customAlert = document.getElementById("customAlert");
+const closeBtn = document.querySelector(".close");
+
+// Function to show the custom alert
+function showCustomAlert( h1,message) {
+    var h2Element = document.querySelector("#customAlert h2");
+    var pElement = document.querySelector("#customAlert p");
+    document.getElementById("quiz-section").style.display = "none";
+    h2Element.textContent = h1;
+    pElement.innerHTML =  intro = `<p>${message}</p>`;
+    customAlert.style.display = "block";
+  
+}
+
+// Function to close the custom alert
+function closeCustomAlert() {
+    customAlert.style.display = "none";
+    document.getElementById("quiz-section").style.display = "block";
+}
+
+// Event listeners
+
+closeBtn.addEventListener("click", closeCustomAlert);
+window.addEventListener("click", (event) => {
+    if (event.target == customAlert) {
+        closeCustomAlert();
+    }
+});
 
 class Quiz {
    /* * *Initialize Quiz Variables**:
@@ -104,43 +132,53 @@ class Quiz {
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if (this.lives == 2) {
-                alert("But two opportunities remain unto me. / You only have two chances left.");
+                showCustomAlert( "2 lives remaining", "But two opportunities remain unto me.<br/>You only have two chances left.")
+                
             } else {
-                alert("Pray, ponder upon the query, but one life remaineth unto thee. / Take some time to think about the question; you only have one life left.");
+                showCustomAlert( " 1 life remains", "Pray, ponder upon the query, but one life remaineth unto thee.<br/> Take some time to think about the question; you only have one life left.")
+              
             }
             }
         else if(this.quizTypeSelected == "vikings"){
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if(this.lives == 2) {
-                alert("Twegen cyrses me yet standaþ/only got two more chances left");
+                showCustomAlert( "2 lives remaining","Twegen cyrses me yet standaþ/only got two more chances left" );
             }else{
-                alert("Bid, smea on þa frignung, ac an lif þe yet standeþ/ time a to think about the question only got 1 life left")
+                showCustomAlert( "1 life remains", "Bid, smea on þa frignung, ac an lif þe yet standeþ <br/> time a to think about the question only got 1 life left")
+               
             }
         }else if(this.quizTypeSelected == "france"){
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if (this.lives == 2) {
-                alert("Vos avez seulement deux chances demourant. / You only have two chances left.");
+                showCustomAlert( "2 lives remaining","Vos avez seulement deux chances demourant.<br/>You only have two chances left." );
+              
             } else {
-                alert("Prenez temps à penser à la question; vos avez une vie seule demourant. / Take some time to think about the question; you only have one life left.");
+                showCustomAlert( "1 life remains", "Prenez temps à penser à la question; vos avez une vie seule demourant.<br/>Take some time to think about the question; you only have one life left.");
+              
             }
             
         } else if(this.quizTypeSelected == "roman"){
             if (this.lives <= 0) {
                 this.displayOutOfLivesModal();
             } else if (this.lives == 2) {
-                alert("Bis tantum opportunitates reliquae sunt tibi. / You only have two chances left.");
+                showCustomAlert( "2 lives remaining","Bis tantum opportunitates reliquae sunt tibi. <br/> You only have two chances left." );
+                
             } else {
-                alert("Cogita tempus de quaestione; una tantum vita reliqua est tibi. / Take some time to think about the question; you only have one life left.");
+                showCustomAlert( "1 life remains", "Cogita tempus de quaestione; una tantum vita reliqua est tibi.<br/>Take some time to think about the question; you only have one life left.")
+               
             }            
         } else if(this.quizTypeSelected == "egypt"){
             if(this.lives <= 0){
                 this.displayOutOfLivesModal();
             } else if (this.lives == 2) {
-                alert("Senetj heru mesut shema. / You have two days (lives) remaining.");
+                showCustomAlert( "2 lives remaining", "Senetj heru mesut shema <br/> You only have two chances left.");
+               
             } else {
-                alert("Heseb kher nedjer en pet. Senetj heru mesu shema. / Reflect upon the words of wisdom. You have one day (lives) remaining.");
+
+                showCustomAlert( "1 life remains", "Heseb kher nedjer en pet. Senetj heru mesu shema.<br/> Reflect upon the words of wisdom. You have 1 life remaining.");
+            
             }
             
         }
@@ -316,6 +354,7 @@ class Quiz {
     document.getElementById('start-buttons').style.display = 'none';
         if(type == 'vikings'){   
             document.getElementById("instructions").style.fontFamily = "Eagle Lake, cursive";
+            document.getElementById("customAlert").style.fontFamily = "Eagle Lake, cursive";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-vikings').style.display= 'block';
             
@@ -326,6 +365,7 @@ class Quiz {
             document.getElementById('character-egypt').style.display= 'none';
         }else if (type == 'roman') {
             document.getElementById("instructions").style.fontFamily = "Cinzel, serif";
+            document.getElementById("customAlert").style.fontFamily = "Cinzel, serif";s
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-romans').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';
@@ -335,6 +375,7 @@ class Quiz {
            
         }else if(type == 'tudors'){
         document.getElementById("instructions").style.fontFamily = "Stoke, serif";
+        document.getElementById("customAlert").style.fontFamily = "Stoke, serif";
          document.getElementById('character-select').style.display = 'block';
          document.getElementById('character-tudors').style.display= 'block';
          document.getElementById('character-france').style.display= 'none';
@@ -345,6 +386,7 @@ class Quiz {
            
        
             document.getElementById("instructions").style.fontFamily = "Cinzel Decorative, cursive";
+            document.getElementById("customAlert").style.fontFamily = "Cinzel Decorative, cursive";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-france').style.display= 'block';
             document.getElementById('character-vikings').style.display= 'none';
@@ -352,7 +394,8 @@ class Quiz {
             document.getElementById('character-romans').style.display= 'none';
             document.getElementById('character-egypt').style.display= 'none';
         } else if(type == 'egypt'){
-            document.getElementById("instructions").style.fontFamily = "Forum, cursive";
+            document.getElementById("instructions").style.fontFamily =  "Forum, cursive";
+            document.getElementById("customAlert").style.fontFamily =  "Forum, cursive";
             document.getElementById('character-select').style.display = "block";
             document.getElementById('character-egypt').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';
@@ -365,127 +408,7 @@ class Quiz {
         }
 
  }
-    // gets the questions for the character
-//  getcharacterQuestions(name){
-//     const question = this.quizData
-//     const newQuestion = [];
-   
-//        console.log(question);
-//    switch(name){
-//     case 'Napoleon':
-//         console.log(name);
-//         document.getElementById('character-france').style.display= 'none';
-//          question.NapoleonQuestions.forEach((Element)=>{
-//          let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//          newQuestion.push(Q);
-//         })
-//         this.quizData = newQuestion;
-//         this.displayinstructions(name);
-       
-//         break;
-//     case 'JoanaofArc':
-//         console.log(name);
-      
-//         question.JoanaofArcQuestions.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'Halfdan':
-//         console.log(name);
-        
-//         question.HalfdanQuestions.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'LeifErikson':
-//         console.log(name);
-        
-//         question.LeifEriksonQuestions.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-           
-//         break;
-//     case 'HenryVIII':
-//         console.log(name);
-      
-       
-//        console.log(question.HenryVIIIQuestions.length); 
-//        question.HenryVIIIQuestions.forEach((Element)=>{
-//             let q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(q);
-//           })
-          
-//            this.quizData = newQuestion;
-//            console.log(this.quizData);
-//            this.displayinstructions(name);
-//         break;
-//     case 'Pope':
-//         console.log(name);
-       
-//         question.PopeQuestions.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'JuliusCaeser':
-//         console.log(name);
-        
-//         question.JuliusCaeser.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'AugustusEmperor':
-//         console.log(name);
-        
-//         question.AugustusEmperor.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'Tutankhamun':
-//         console.log(name);
-        
-//         question.Tutankhamun.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
-//     case 'Cleopatra':
-//         console.log(name);
-        
-//         question.Cleopatra.forEach((Element)=>{
-//             let Q = new Questions(Element.id,Element.category,Element.question,Element.options,Element.answer);
-//             newQuestion.push(Q);
-//            })
-//            this.quizData = newQuestion;
-//            this.displayinstructions(name);
-//         break;
 
-//     default:
-//         console.log('no character selected');
-//         break;  
-//    }
- 
-  
-//  }
 
 getcharacterQuestions(name){
     const question = this.quizData;
@@ -726,4 +649,6 @@ getcharacterQuestions(name){
 }
 // instance of quiz
 const quizGame = new Quiz();
+
+// Get references to the elements
 
