@@ -76,7 +76,6 @@ class Quiz {
                     }
                 } else {
                     this.lives--;
-                    // disable button after wrong choice
                     optionBtn.disabled = true;
                     this.updateLivesDisplay();
                     this.displayLifeMessages();
