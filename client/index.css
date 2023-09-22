@@ -3,55 +3,197 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
+    background-image: url(background.jpg);
 }
 
 h1{
     font-size: 40px;
     text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 #start-buttons,
 #quiz-section,
+#instruction-box,
+#character-vikings,
+#character-tudors,
+#character-france,
+#character-romans,
+#character-egypt,
 #out-of-lives-modal {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(244,244,244,0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.img-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-button img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.img-button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);  /* semi-transparent background */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;  /* Adjust based on your image's height */
+}
+
 
 button {
     padding: 10px 20px;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: rgb(185, 109, 10);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #a35f0b;
+}
+
+#character-select {
+    display: none;
 }
 
 #options button {
     display: block;
     margin: 5px auto;
+    background-color: maroon;
 }
 
-#character-vikings{
-    display: none;
+#start-button {
+    background-color: maroon;
 }
-#character-romans{
-    display: none;
+
+#rule-title, #character-title {
+    font-size: 30px;
 }
-#character-tudors{
-    display: none;
+
+#instructions {
+    font-family: 'IM Fell English SC', serif;
 }
-#character-france{
-    display: none;
+
+#question-text {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 25px;
 }
-#character-select{
+
+#options{
+    font-family: 'Quintessential', cursive;
+}
+
+#lives {
+    font-family: 'VT323', monospace;
+}
+
+/* resize heart from js file */
+
+#lives .heart-div img {
+    height: 25px;
+    width: auto;
+    /* position it on the right */
+    float: right;
+    /* display: inline-block; */
+
+}
+
+#lives .lives-text {
+    clear: both;
+    text-align: right;
+}
+
+#character-image-container {
+    display: block; /* Adjust as needed; could also be 'right' */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 20px; Space between the image and the text/content */
+    width: 150px; /* Width of the container */
+    height: 200px; /* Height of the container */
+}
+
+#character-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the aspect ratio is maintained */
+}
+
+
+
+
+
+* Styles for the custom alert box */
+#customAlert {
     display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(character-images/old-stained-paper-texture-free.jpg);
+}
+
+.modal-content {
+    
+    background-image: url(character-images/errorjpg.jpg);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+} 
+#customAlert p{
+    color: rgb(7, 0, 0);
+    font-size: 20px;
+}
+#okay {
+    margin-left: auto;
+    margin-right: auto;
+}
+#aRetry-quiz{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: maroon;
+}
+#Home{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
