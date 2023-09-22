@@ -332,7 +332,7 @@ class Quiz {
     }
     // gets the questions for the time period from api
     getData(type) {
-        fetch('http://localhost:3000/home')
+        fetch('https://history-server.onrender.com')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -378,6 +378,7 @@ class Quiz {
         if(type == 'vikings'){   
             document.getElementById("instructions").style.fontFamily = "Eagle Lake, cursive";
             document.getElementById("customAlert").style.fontFamily = "Eagle Lake, cursive";
+            document.getElementById("out-of-lives-modal").style.fontFamily = "Eagle Lake, cursive"; 
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-vikings').style.display= 'block';
             
@@ -389,6 +390,7 @@ class Quiz {
         }else if (type == 'roman') {
             document.getElementById("instructions").style.fontFamily = "Cinzel, serif";
             document.getElementById("customAlert").style.fontFamily = "Cinzel, serif";
+            document.getElementById("out-of-lives-modal").style.fontFamily = "Cinzel, serif";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-romans').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';
@@ -399,6 +401,7 @@ class Quiz {
         }else if(type == 'tudors'){
         document.getElementById("instructions").style.fontFamily = "Stoke, serif";
         document.getElementById("customAlert").style.fontFamily = "Stoke, serif";
+        document.getElementById("out-of-lives-modal").style.fontFamily = "Stoke, serif";
          document.getElementById('character-select').style.display = 'block';
          document.getElementById('character-tudors').style.display= 'block';
          document.getElementById('character-france').style.display= 'none';
@@ -410,6 +413,8 @@ class Quiz {
        
             document.getElementById("instructions").style.fontFamily = "Cinzel Decorative, cursive";
             document.getElementById("customAlert").style.fontFamily = "Cinzel Decorative, cursive";
+            
+            document.getElementById("out-of-lives-modal").style.fontFamily = "Cinzel Decorative, cursive";
             document.getElementById('character-select').style.display = 'block';
             document.getElementById('character-france').style.display= 'block';
             document.getElementById('character-vikings').style.display= 'none';
@@ -419,6 +424,7 @@ class Quiz {
         } else if(type == 'egypt'){
             document.getElementById("instructions").style.fontFamily =  "Forum, cursive";
             document.getElementById("customAlert").style.fontFamily =  "Forum, cursive";
+            document.getElementById("out-of-lives-modal").style.fontFamily = "Forum, cursive";
             document.getElementById('character-select').style.display = "block";
             document.getElementById('character-egypt').style.display= 'block';
             document.getElementById('character-france').style.display= 'none';

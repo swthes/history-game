@@ -197,3 +197,11 @@ button:hover {
     margin-right: auto;
     display: inline-block;
 }
+#out-of-lives-modal {
+    background-image: url(character-images/errorjpg.jpg);
+}
+#retry-quiz{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: maroon;
+}
