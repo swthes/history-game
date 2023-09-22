@@ -251,10 +251,10 @@ class Quiz {
     // retry quiz function sets the display to none for the modal and shows the quiz and restarts the quiz
     retryQuiz() {
         document.getElementById("out-of-lives-modal").style.display = "none";
-        this.clearProgress();
-        this.startQuiz(this.quizTypeSelected);
         this.currentQuestionIndex = 0;
         this.lives = 3;
+        this.clearProgress();
+        this.startQuiz(this.quizTypeSelected);
         this.updateLivesDisplay();
     }
 // modal home function sets the display to none for the modal and shows the start buttons via the back to home function
